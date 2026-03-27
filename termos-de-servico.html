@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Serviço | AGROCIEL</title>
+  <meta name="description" content="Termos de Serviço da AGROCIEL aplicáveis ao site institucional, atendimento remoto e formalização digital quando cabível.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1B5E20;
+      --secondary: #8BC34A;
+      --accent: #CDDC39;
+      --highlight: #FFD600;
+      --navy: #0A192F;
+      --off-white: #F8F9FA;
+      --white: #FFFFFF;
+      --gray-light: #E9ECEF;
+      --gray-text: #495057;
+      --text-dark: #212529;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+      --radius: 16px;
+      --max: 1200px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8f9 100%);
+      color: var(--text-dark);
+      line-height: 1.65;
+    }
+    .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .top-bar {
+      background: var(--navy); color: var(--white); font-size: .78rem; padding: 8px 0;
+    }
+    .top-bar .container { display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center; }
+    .top-bar a { color:#fff; text-decoration:none; opacity:.92; }
+    header {
+      position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94);
+      backdrop-filter: blur(10px); border-bottom: 1px solid rgba(10,25,47,.06);
+    }
+    header .container { display:flex; justify-content:space-between; align-items:center; min-height:78px; gap:20px; }
+    .brand {
+      display:inline-flex; align-items:center; gap:14px; text-decoration:none; color: var(--navy); font-weight:800;
+      letter-spacing:.06em; text-transform:uppercase;
+    }
+    .brand-mark {
+      width:46px; height:46px; border-radius:12px; background:linear-gradient(135deg, var(--primary), #2e7d32);
+      color:#fff; display:grid; place-items:center; box-shadow: var(--shadow);
+    }
+    .nav-actions { display:flex; gap:12px; flex-wrap:wrap; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:999px;
+      text-decoration:none; font-weight:700; transition:.25s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--highlight); color: var(--navy); }
+    .btn-secondary { background: var(--navy); color: var(--white); }
+    .hero {
+      position: relative; overflow:hidden; padding:72px 0 40px;
+      background: linear-gradient(115deg, rgba(10,25,47,.98) 0%, rgba(14,40,76,.94) 45%, rgba(27,94,32,.96) 100%);
+      color:#fff;
+    }
+    .hero::before {
+      content:""; position:absolute; inset:auto 0 0 0; height:10px;
+      background: linear-gradient(90deg, var(--highlight), var(--accent), var(--secondary));
+    }
+    .hero-grid { display:grid; grid-template-columns: 1.3fr .8fr; gap:28px; align-items:center; }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:8px; background: rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.16);
+      border-radius:999px; padding:10px 14px; font-size:.85rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+    }
+    h1 { margin:18px 0 14px; font-size: clamp(2rem,4vw,3.65rem); line-height:1.06; }
+    .hero p { max-width:760px; font-size:1.05rem; color:rgba(255,255,255,.92); }
+    .hero-card {
+      background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:20px; padding:24px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.16);
+    }
+    .hero-card h3 { margin-top:0; margin-bottom:12px; font-size:1.05rem; }
+    .hero-card ul { margin:0; padding-left:18px; }
+    .hero-card li { margin-bottom:10px; color:rgba(255,255,255,.92); }
+    .content { padding:42px 0 56px; }
+    .layout { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.8fr); gap:24px; }
+    .card { background:#fff; border:1px solid rgba(10,25,47,.06); border-radius:16px; box-shadow:var(--shadow); }
+    .main-card { padding:34px; }
+    .side-card { padding:24px; }
+    .section-kicker { color: var(--primary); font-size:.82rem; font-weight:800; text-transform:uppercase; letter-spacing:.12em; }
+    h2 { margin:10px 0 12px; font-size: clamp(1.6rem,3vw,2.25rem); color: var(--navy); }
+    .lead { color: var(--gray-text); font-size:1rem; }
+    .summary-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:24px 0 10px; }
+    .summary-item { background:linear-gradient(180deg, #fff 0%, #f5f8f4 100%); border:1px solid rgba(27,94,32,.10); border-radius:14px; padding:18px; }
+    .summary-item strong { display:block; margin-bottom:8px; color:var(--navy); }
+    .article { display:grid; gap:18px; margin-top:26px; }
+    .article section { border-top:1px solid rgba(10,25,47,.08); padding-top:18px; }
+    .article h3 { margin:0 0 10px; color:var(--navy); font-size:1.06rem; }
+    .article p, .article li { color:#334155; }
+    .article ul { margin:10px 0 0 18px; padding:0; }
+    .side-stack { display:grid; gap:18px; }
+    .pill-list { list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+    .pill-list li {
+      background:#f6f9f4; border:1px solid rgba(27,94,32,.1); border-radius:14px; padding:14px 14px 14px 16px; position:relative;
+    }
+    .pill-list li::before {
+      content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:linear-gradient(180deg, var(--highlight), var(--secondary)); border-radius:14px 0 0 14px;
+    }
+    .notice { background:linear-gradient(135deg, rgba(255,214,0,.14), rgba(139,195,74,.13)); border:1px solid rgba(205,220,57,.5); border-radius:16px; padding:18px; color: var(--navy); }
+    .footer { background: var(--navy); color: rgba(255,255,255,.86); padding:34px 0 42px; margin-top:24px; position:relative; }
+    .footer::before { content:""; position:absolute; inset:0 0 auto 0; height:6px; background:linear-gradient(90deg, var(--highlight), var(--accent), var(--secondary)); }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+    .footer h4 { color:#fff; margin-bottom:10px; }
+    .footer a { color:#fff; text-decoration:none; }
+    .small { font-size:.92rem; color: rgba(255,255,255,.72); margin-top:20px; padding-top:16px; border-top:1px solid rgba(255,255,255,.12); }
+    @media (max-width:900px) { .hero-grid, .layout { grid-template-columns:1fr; } .hero { padding-top:54px; } .main-card { padding:24px; } .side-card { padding:20px; } }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <div>AGROCIEL • termos aplicáveis ao site, ao atendimento remoto e à formalização digital</div>
+      <a href="mailto:agrociel.adm@gmail.com">agrociel.adm@gmail.com</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AG</span>
+        <span>AGROCIEL</span>
+      </a>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a class="btn btn-secondary" href="index.html">Voltar ao site</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Termos de Serviço</span>
+        <h1>Regras de uso do site, do atendimento remoto e da formalização digital da AGROCIEL.</h1>
+        <p>Este documento disciplina o acesso ao site da AGROCIEL, aos seus canais digitais e aos fluxos de atendimento que possam envolver soluções financeiras, atividades de correspondente bancário, conteúdos de agronegócio e procedimentos eletrônicos de confirmação e formalização, quando cabíveis.</p>
+      </div>
+      <aside class="hero-card">
+        <h3>Finalidade desta página</h3>
+        <ul>
+          <li>URL pública para cadastro em plataformas e aplicativos.</li>
+          <li>Referência formal para regras de uso do site e dos canais digitais.</li>
+          <li>Base institucional para atendimento remoto e coleta de evidências de formalização.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="container layout">
+      <article class="card main-card">
+        <span class="section-kicker">Documento institucional</span>
+        <h2>Termos de Serviço da AGROCIEL</h2>
+        <p class="lead">Ao acessar, navegar ou utilizar o site e os canais digitais da AGROCIEL, o usuário declara ciência e concordância com estes termos, comprometendo-se a utilizar a plataforma de forma lícita, ética e compatível com sua finalidade. Estes termos também abrangem o relacionamento digital mantido pela empresa com clientes, potenciais clientes e usuários em processos de atendimento e formalização eletrônica, quando aplicáveis.</p>
+
+        <div class="summary-grid">
+          <div class="summary-item"><strong>Aplicação</strong>site, páginas informativas, formulários, atendimento remoto e canais digitais</div>
+          <div class="summary-item"><strong>Natureza</strong>conteúdo institucional, informativo, operacional e de relacionamento</div>
+          <div class="summary-item"><strong>Contato</strong>agrociel.adm@gmail.com</div>
+        </div>
+
+        <div class="article">
+          <section>
+            <h3>1. Finalidade da plataforma</h3>
+            <p>O site da AGROCIEL destina-se à apresentação institucional da empresa, divulgação de conteúdos relacionados ao agronegócio e ao mercado financeiro, disponibilização de canais de contato, central de orientação e apoio ao atendimento remoto de clientes em todo o Brasil.</p>
+          </section>
+
+          <section>
+            <h3>2. Natureza dos serviços e do conteúdo</h3>
+            <p>As informações disponibilizadas no site possuem caráter institucional, informativo e operacional. A AGROCIEL poderá atuar em soluções financeiras, atendimento comercial, apoio documental, orientação e intermediação, inclusive como correspondente bancário, quando aplicável. Nenhum conteúdo do site constitui, por si só, garantia de aprovação, contratação, concessão de crédito ou resultado específico, que sempre dependerão de análise própria, critérios da instituição envolvida e da documentação exigida.</p>
+          </section>
+
+          <section>
+            <h3>3. Atendimento remoto em âmbito nacional</h3>
+            <p>O atendimento poderá ser realizado à distância, por meios eletrônicos, inclusive site, telefone, WhatsApp, e-mail, formulários e outros canais digitais. O usuário declara que compreende a natureza remota do atendimento e que poderá receber orientações, solicitações de documentos, links de confirmação, materiais de apoio e instruções de formalização compatíveis com a operação pretendida.</p>
+          </section>
+
+          <section>
+            <h3>4. Formalização digital e registros de evidência</h3>
+            <p>Quando aplicável ao serviço solicitado, a AGROCIEL poderá utilizar procedimentos de formalização digital, incluindo confirmação de dados, aceite eletrônico, envio e recebimento de documentos, coleta de comprovantes, registros de conversas, fotografias, anexos, logs e demais evidências pertinentes ao atendimento realizado. Tais elementos poderão ser preservados para segurança operacional, prevenção a fraudes, rastreabilidade do atendimento e exercício regular de direitos, sem prejuízo de instrumentos específicos eventualmente exigidos por instituição financeira, parceiro comercial ou norma aplicável.</p>
+          </section>
+
+          <section>
+            <h3>5. Responsabilidade do usuário</h3>
+            <p>O usuário compromete-se a fornecer informações verdadeiras, completas e atualizadas, bem como a encaminhar documentos legítimos e utilizar a plataforma de forma regular. É vedado inserir dados falsos, praticar fraude, tentar contornar mecanismos de segurança, utilizar a identidade de terceiros sem autorização ou adotar condutas ilícitas ou abusivas.</p>
+          </section>
+
+          <section>
+            <h3>6. Contratações específicas</h3>
+            <p>Qualquer contratação, proposta, formalização ou operação relacionada aos serviços divulgados no site dependerá da análise concreta do caso, da documentação exigida, das regras da instituição parceira e, quando cabível, de instrumento contratual próprio, físico ou eletrônico, que prevalecerá sobre descrições resumidas ou materiais informativos publicados neste ambiente digital.</p>
+          </section>
+
+          <section>
+            <h3>7. Propriedade intelectual e integridade da plataforma</h3>
+            <p>Os textos, marcas, layout, identidade visual, materiais institucionais, vídeos, imagens, sinais distintivos e demais conteúdos disponibilizados no site pertencem à AGROCIEL ou são utilizados legitimamente, sendo vedada sua reprodução, distribuição, alteração, exploração econômica ou utilização indevida sem autorização, quando exigível.</p>
+          </section>
+
+          <section>
+            <h3>8. Disponibilidade e limitações</h3>
+            <p>A AGROCIEL emprega esforços razoáveis para manter o site acessível, seguro e funcional, mas não garante disponibilidade ininterrupta, ausência absoluta de falhas, indisponibilidades temporárias, erros de navegação, eventos de terceiros, problemas de conectividade ou situações alheias ao seu controle razoável.</p>
+          </section>
+
+          <section>
+            <h3>9. Privacidade e dados pessoais</h3>
+            <p>O tratamento de dados decorrente do uso do site e dos canais digitais observará a política de privacidade da AGROCIEL, disponível em página própria, a qual integra estes termos para todos os fins pertinentes.</p>
+          </section>
+
+          <section>
+            <h3>10. Alterações e vigência</h3>
+            <p>A AGROCIEL poderá atualizar estes termos a qualquer tempo, especialmente para refletir mudanças legais, regulatórias, operacionais, tecnológicas ou de modelo de atendimento. A versão publicada nesta página será considerada a versão vigente.</p>
+          </section>
+        </div>
+      </article>
+
+      <aside class="side-stack">
+        <div class="card side-card">
+          <h3 style="margin-top:0;color:var(--navy);">Pontos essenciais</h3>
+          <ul class="pill-list">
+            <li>Atendimento remoto nacional com apoio de canais digitais.</li>
+            <li>Formalização eletrônica e guarda de evidências, quando aplicáveis.</li>
+            <li>Contratações sujeitas a análise, documentação e regras específicas.</li>
+            <li>Página apta para uso público em integrações e cadastros.</li>
+          </ul>
+        </div>
+
+        <div class="card side-card">
+          <h3 style="margin-top:0;color:var(--navy);">Uso em plataformas externas</h3>
+          <p>Esta página pode ser utilizada como URL pública de termos de serviço em plataformas, aplicativos e cadastros que exijam apresentação formal das regras do site e do ambiente digital da AGROCIEL.</p>
+        </div>
+
+        <div class="notice">
+          <strong>Observação importante.</strong>
+          <div style="margin-top:8px;">Os procedimentos digitais adotados pela AGROCIEL servem para organizar, confirmar e documentar o atendimento, mas não afastam a necessidade de requisitos adicionais exigidos por instituição financeira, parceiro comercial ou norma aplicável.</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>AGROCIEL</h4>
+          <p>Soluções para agronegócio e serviços financeiros com foco em credibilidade, segurança operacional e relacionamento digital estruturado.</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="mailto:agrociel.adm@gmail.com">agrociel.adm@gmail.com</a></p>
+          <p><a href="index.html">Voltar ao site principal</a></p>
+        </div>
+        <div>
+          <h4>Documento relacionado</h4>
+          <p><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+        </div>
+      </div>
+      <div class="small">Última atualização editorial desta versão: março de 2026.</div>
+    </div>
+  </footer>
+</body>
+</html>

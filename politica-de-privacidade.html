@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade | AGROCIEL</title>
+  <meta name="description" content="Política de Privacidade da AGROCIEL para atendimento remoto, formalização digital e relacionamento com clientes em soluções financeiras e agronegócio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1B5E20;
+      --secondary: #8BC34A;
+      --accent: #CDDC39;
+      --highlight: #FFD600;
+      --navy: #0A192F;
+      --off-white: #F8F9FA;
+      --white: #FFFFFF;
+      --gray-light: #E9ECEF;
+      --gray-text: #495057;
+      --text-dark: #212529;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+      --radius: 16px;
+      --max: 1200px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8f9 100%);
+      color: var(--text-dark);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .top-bar {
+      background: var(--navy);
+      color: var(--white);
+      font-size: .78rem;
+      padding: 8px 0;
+    }
+    .top-bar .container {
+      display: flex; justify-content: space-between; gap: 18px; align-items: center; flex-wrap: wrap;
+    }
+    .top-bar a { color: var(--white); text-decoration: none; opacity: .92; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(10,25,47,.06);
+    }
+    header .container {
+      display: flex; justify-content: space-between; align-items: center; min-height: 78px; gap: 20px;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 14px; text-decoration: none; color: var(--navy); font-weight: 800;
+      letter-spacing: .06em; text-transform: uppercase;
+    }
+    .brand-mark {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), #2e7d32);
+      color: var(--white); display: grid; place-items: center; box-shadow: var(--shadow);
+    }
+    .nav-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 18px; border-radius: 999px; text-decoration: none; font-weight: 700; border: none;
+      transition: .25s ease; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--highlight); color: var(--navy); }
+    .btn-secondary { background: var(--navy); color: var(--white); }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 72px 0 40px;
+      background:
+        linear-gradient(115deg, rgba(27,94,32,.98) 0%, rgba(27,94,32,.93) 48%, rgba(10,25,47,.96) 100%);
+      color: var(--white);
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: auto 0 0 0; height: 10px;
+      background: linear-gradient(90deg, var(--highlight), var(--accent), var(--secondary));
+    }
+    .hero-grid {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1.3fr .8fr; gap: 28px; align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.16);
+      border-radius: 999px; padding: 10px 14px; font-size: .85rem; font-weight: 700; letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 18px 0 14px; font-size: clamp(2rem, 4vw, 3.65rem); line-height: 1.06; }
+    .hero p { max-width: 760px; font-size: 1.05rem; color: rgba(255,255,255,.92); }
+    .hero-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.16);
+    }
+    .hero-card h3 { margin-top: 0; margin-bottom: 12px; font-size: 1.05rem; }
+    .hero-card ul { margin: 0; padding-left: 18px; }
+    .hero-card li { margin-bottom: 10px; color: rgba(255,255,255,.92); }
+    .content { padding: 42px 0 56px; }
+    .layout { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(280px,.8fr); gap: 24px; }
+    .card {
+      background: var(--white); border: 1px solid rgba(10,25,47,.06);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    .main-card { padding: 34px; }
+    .side-card { padding: 24px; }
+    .section-kicker {
+      color: var(--primary); font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em;
+    }
+    h2 { margin: 10px 0 12px; font-size: clamp(1.6rem, 3vw, 2.25rem); color: var(--navy); }
+    .lead { color: var(--gray-text); font-size: 1rem; }
+    .summary-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 14px; margin: 24px 0 10px;
+    }
+    .summary-item {
+      background: linear-gradient(180deg, #ffffff 0%, #f5f8f4 100%);
+      border: 1px solid rgba(27,94,32,.10); border-radius: 14px; padding: 18px;
+    }
+    .summary-item strong { display: block; margin-bottom: 8px; color: var(--navy); }
+    .article { display: grid; gap: 18px; margin-top: 26px; }
+    .article section {
+      border-top: 1px solid rgba(10,25,47,.08);
+      padding-top: 18px;
+    }
+    .article h3 { margin: 0 0 10px; color: var(--navy); font-size: 1.06rem; }
+    .article p, .article li { color: #334155; }
+    .article ul { margin: 10px 0 0 18px; padding: 0; }
+    .side-stack { display: grid; gap: 18px; }
+    .pill-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    .pill-list li {
+      background: #f6f9f4; border: 1px solid rgba(27,94,32,.1); border-radius: 14px; padding: 14px 14px 14px 16px;
+      position: relative;
+    }
+    .pill-list li::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, var(--highlight), var(--secondary)); border-radius: 14px 0 0 14px;
+    }
+    .notice {
+      background: linear-gradient(135deg, rgba(255,214,0,.14), rgba(139,195,74,.13));
+      border: 1px solid rgba(205,220,57,.5);
+      border-radius: 16px; padding: 18px;
+      color: var(--navy);
+    }
+    .footer {
+      background: var(--navy); color: rgba(255,255,255,.86); padding: 34px 0 42px; margin-top: 24px; position: relative;
+    }
+    .footer::before {
+      content: ""; position: absolute; inset: 0 0 auto 0; height: 6px; background: linear-gradient(90deg, var(--highlight), var(--accent), var(--secondary));
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px;
+    }
+    .footer h4 { color: #fff; margin-bottom: 10px; }
+    .footer a { color: #fff; text-decoration: none; }
+    .small { font-size: .92rem; color: rgba(255,255,255,.72); margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); }
+    @media (max-width: 900px) {
+      .hero-grid, .layout { grid-template-columns: 1fr; }
+      .hero { padding-top: 54px; }
+      .main-card { padding: 24px; }
+      .side-card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <div>AGROCIEL • soluções financeiras e agronegócio com atendimento em todo o Brasil</div>
+      <a href="mailto:privacidade@agrociel.com.br">privacidade@agrociel.com.br</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AG</span>
+        <span>AGROCIEL</span>
+      </a>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="termos-de-servico.html">Termos de Serviço</a>
+        <a class="btn btn-secondary" href="index.html">Voltar ao site</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Política de Privacidade</span>
+        <h1>Proteção de dados, segurança operacional e formalização digital com transparência.</h1>
+        <p>Esta política estabelece as regras aplicáveis ao tratamento de dados pessoais pela AGROCIEL em seu site, canais digitais, atendimento remoto e procedimentos de formalização relacionados a soluções financeiras, agronegócio e atividades de correspondente bancário, sempre conforme a legislação aplicável.</p>
+      </div>
+      <aside class="hero-card">
+        <h3>Uso institucional desta página</h3>
+        <ul>
+          <li>URL pública para cadastro em plataformas como Meta.</li>
+          <li>Referência formal para atendimento remoto e relacionamento digital.</li>
+          <li>Documento apto para informar tratamento de dados, registros e segurança.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="container layout">
+      <article class="card main-card">
+        <span class="section-kicker">Documento institucional</span>
+        <h2>Política de Privacidade da AGROCIEL</h2>
+        <p class="lead">A AGROCIEL compromete-se a tratar dados pessoais de forma compatível com a boa-fé, a finalidade legítima, a necessidade, a adequação, a segurança e a transparência. Esta política também se aplica a atendimentos realizados à distância, inclusive quando houver formalização digital, envio de documentos, validação de identidade, confirmações eletrônicas e manutenção de registros para segurança, conformidade e exercício regular de direitos.</p>
+
+        <div class="summary-grid">
+          <div class="summary-item"><strong>Controladora</strong>AGROCIEL</div>
+          <div class="summary-item"><strong>Canal de privacidade</strong>privacidade@agrociel.com.br</div>
+          <div class="summary-item"><strong>Escopo</strong>site, formulários, atendimento remoto, WhatsApp e formalização digital quando aplicável</div>
+        </div>
+
+        <div class="article">
+          <section>
+            <h3>1. Dados que podem ser coletados</h3>
+            <p>Conforme o canal utilizado e a natureza da solicitação, a AGROCIEL poderá tratar dados de identificação e contato, como nome, CPF, telefone, e-mail, cidade, informações profissionais e dados enviados voluntariamente pelo titular. Em processos de atendimento ou formalização digital, quando aplicável ao serviço solicitado, também poderão ser recebidos documentos, comprovantes, fotografias, registros de confirmação, conversas, anexos, evidências de consentimento ou outros elementos necessários à análise, à segurança da operação e ao atendimento da demanda apresentada.</p>
+          </section>
+
+          <section>
+            <h3>2. Finalidades do tratamento</h3>
+            <p>Os dados poderão ser tratados para atendimento institucional e comercial, análise inicial de demandas, contato com o titular, encaminhamento de solicitações a parceiros ou instituições competentes, prestação de informações sobre soluções financeiras e agronegócio, prevenção a fraudes, verificação de identidade, proteção da empresa e do cliente, cumprimento de exigências legais e regulatórias, formalização digital quando aplicável, guarda de evidências de atendimento e exercício regular de direitos.</p>
+          </section>
+
+          <section>
+            <h3>3. Bases legais aplicáveis</h3>
+            <p>O tratamento poderá ocorrer, conforme o caso concreto, com fundamento no consentimento do titular, na execução de procedimentos preliminares relacionados a contrato ou proposta, no cumprimento de obrigação legal ou regulatória, no exercício regular de direitos, na proteção do crédito, no legítimo interesse e em outras hipóteses autorizadas pela legislação aplicável.</p>
+          </section>
+
+          <section>
+            <h3>4. Atendimento remoto e formalização digital</h3>
+            <p>A AGROCIEL poderá realizar atendimento remoto em todo o território nacional. Quando a natureza da operação exigir, poderão ser adotados procedimentos de formalização digital, inclusive envio de links, coleta de documentos, conferência de dados, aceite eletrônico, registro de interações e armazenamento de evidências correlatas. Tais medidas destinam-se à segurança operacional, à rastreabilidade do atendimento, à prevenção de fraudes e à preservação de elementos comprobatórios relativos à solicitação apresentada pelo cliente, observadas as regras da instituição envolvida e da legislação aplicável.</p>
+          </section>
+
+          <section>
+            <h3>5. Compartilhamento de dados</h3>
+            <p>Os dados poderão ser compartilhados, dentro dos limites estritamente necessários, com fornecedores de tecnologia, prestadores de serviços, parceiros operacionais, instituições financeiras, correspondentes ou autoridades competentes, quando isso for indispensável ao atendimento solicitado, à formalização pertinente, ao cumprimento de obrigação legal ou regulatória, à segurança da operação ou ao exercício regular de direitos.</p>
+          </section>
+
+          <section>
+            <h3>6. Retenção e conservação</h3>
+            <p>Os dados serão mantidos pelo prazo necessário ao cumprimento da finalidade que justificou sua coleta, bem como pelo período exigido para obrigações legais, regulatórias, contratuais, auditoria, prevenção de litígios, segurança da informação e resguardo de direitos da AGROCIEL, do titular e de terceiros envolvidos na relação.</p>
+          </section>
+
+          <section>
+            <h3>7. Direitos do titular</h3>
+            <p>Observados os limites legais, o titular poderá solicitar confirmação da existência de tratamento, acesso, correção de dados incompletos, inexatos ou desatualizados, informações sobre compartilhamento, revisão de consentimento quando cabível e outras providências previstas na legislação aplicável.</p>
+          </section>
+
+          <section>
+            <h3>8. Segurança e governança</h3>
+            <p>A AGROCIEL adota medidas técnicas, administrativas e organizacionais compatíveis com a natureza dos dados tratados, buscando mitigar riscos de acesso não autorizado, vazamento, destruição, perda, alteração ou tratamento inadequado. Nenhuma solução tecnológica, contudo, é absolutamente imune a incidentes, razão pela qual os controles são continuamente observados e aperfeiçoados.</p>
+          </section>
+
+          <section>
+            <h3>9. Canal de contato</h3>
+            <p>Solicitações relacionadas a esta política ou ao exercício de direitos deverão ser encaminhadas para <a href="mailto:privacidade@agrociel.com.br">privacidade@agrociel.com.br</a>, com identificação suficiente do solicitante e descrição objetiva do pedido.</p>
+          </section>
+
+          <section>
+            <h3>10. Atualizações</h3>
+            <p>Esta política poderá ser modificada a qualquer tempo para refletir alterações legais, regulatórias, operacionais ou tecnológicas. A versão publicada nesta página será considerada a versão vigente.</p>
+          </section>
+        </div>
+      </article>
+
+      <aside class="side-stack">
+        <div class="card side-card">
+          <h3 style="margin-top:0;color:var(--navy);">Pontos essenciais</h3>
+          <ul class="pill-list">
+            <li>Tratamento orientado por finalidade legítima, necessidade e segurança.</li>
+            <li>Atendimento remoto com possibilidade de formalização digital, quando aplicável.</li>
+            <li>Guarda de registros e evidências para prevenção de fraudes e resguardo jurídico.</li>
+            <li>Documento apto para referência pública em integrações e cadastros.</li>
+          </ul>
+        </div>
+
+        <div class="card side-card">
+          <h3 style="margin-top:0;color:var(--navy);">Aplicação prática</h3>
+          <p>Esta página pode ser informada como URL pública de política de privacidade em plataformas, aplicativos, integrações e ambientes que exijam referência institucional formal.</p>
+        </div>
+
+        <div class="notice">
+          <strong>Observação importante.</strong>
+          <div style="margin-top:8px;">A formalização digital mencionada nesta política não substitui eventuais instrumentos específicos exigidos por instituição financeira, parceiro comercial ou norma aplicável. Cada operação observará seus requisitos próprios.</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>AGROCIEL</h4>
+          <p>Soluções para agronegócio e serviços financeiros com atuação nacional, atendimento digital e foco em segurança operacional.</p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p><a href="mailto:privacidade@agrociel.com.br">privacidade@agrociel.com.br</a></p>
+          <p><a href="index.html">Voltar ao site principal</a></p>
+        </div>
+        <div>
+          <h4>Documento relacionado</h4>
+          <p><a href="termos-de-servico.html">Termos de Serviço</a></p>
+        </div>
+      </div>
+      <div class="small">Última atualização editorial desta versão: março de 2026.</div>
+    </div>
+  </footer>
+</body>
+</html>
