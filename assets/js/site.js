@@ -36,7 +36,8 @@
 
   /* menu do celular */
   var drawer = $('#drawer');
-  function drawerSet(v) { if (!drawer) return; drawer.classList.toggle('is-open', v); d.body.style.overflow = v ? 'hidden' : ''; $('.menu-btn').setAttribute('aria-expanded', v ? 'true' : 'false'); if (v) $('.drawer-close').focus(); }
+  function closeAnim(el, ms) { if (reduce) { el.classList.remove('is-open'); return; } el.classList.add('is-closing'); el.classList.remove('is-open'); setTimeout(function () { el.classList.remove('is-closing'); }, ms); }
+  function drawerSet(v) { if (!drawer) return; if (v) drawer.classList.add('is-open'); else if (drawer.classList.contains('is-open')) closeAnim(drawer, 240); d.body.style.overflow = v ? 'hidden' : ''; $('.menu-btn').setAttribute('aria-expanded', v ? 'true' : 'false'); if (v) $('.drawer-close').focus(); }
   if (drawer) {
     $('.menu-btn').addEventListener('click', function () { drawerSet(true); });
     $$('[data-drawer-close]').forEach(function (b) { b.addEventListener('click', function () { drawerSet(false); }); });
@@ -90,6 +91,38 @@
     });
   });
 
+  /* perguntas frequentes: a resposta abre e fecha deslizando */
+  $$('.faq-list details').forEach(function (det) {
+    var sum = $('summary', det), body = $('p', det), anim = null;
+    if (!sum || !body || reduce) return;
+    sum.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (anim) anim.cancel();
+      var opening = !det.open, start = det.offsetHeight;
+      if (opening) det.open = true;
+      var end = opening ? det.offsetHeight : sum.offsetHeight;
+      body.style.opacity = opening ? '1' : '0';
+      det.style.overflow = 'hidden';
+      anim = det.animate({ height: [start + 'px', end + 'px'] }, { duration: opening ? 280 : 220, easing: 'cubic-bezier(.23,1,.32,1)' });
+      anim.onfinish = function () { if (!opening) det.open = false; det.style.overflow = ''; body.style.opacity = ''; anim = null; };
+    });
+  });
+
+  /* "Como funciona": a linha das etapas se preenche com a rolagem */
+  var how = $('[data-how]');
+  if (how && !reduce && matchMedia('(min-width: 901px)').matches) {
+    var hs = $('.how-steps', how), hsteps = $$('.step', how), hTick = false;
+    var hUpdate = function () {
+      hTick = false;
+      var r = how.getBoundingClientRect(), total = r.height - innerHeight;
+      var p = Math.min(1, Math.max(0, -r.top / (total * .8)));
+      hs.style.setProperty('--p', p.toFixed(3));
+      hsteps.forEach(function (st, i) { st.classList.toggle('is-on', p >= i / hsteps.length - .001 + .02); });
+    };
+    window.addEventListener('scroll', function () { if (!hTick) { hTick = true; requestAnimationFrame(hUpdate); } }, { passive: true });
+    window.addEventListener('resize', hUpdate); hUpdate();
+  }
+
   /* revelação ao rolar */
   if (!reduce && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: .08 });
@@ -102,7 +135,7 @@
   function modalSet(v, service) {
     if (!modal) return;
     if (v) { lastFocus = d.activeElement; if (service) { var s = form.servico; for (var i = 0; i < s.options.length; i++) if (s.options[i].value === service) s.selectedIndex = i; } }
-    modal.classList.toggle('is-open', v); d.body.style.overflow = v ? 'hidden' : '';
+    if (v) modal.classList.add('is-open'); else if (modal.classList.contains('is-open')) closeAnim(modal, 180); d.body.style.overflow = v ? 'hidden' : '';
     if (v) setTimeout(function () { form.nome.focus(); }, 50); else if (lastFocus) lastFocus.focus();
   }
   $$('[data-agendar]').forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); modalSet(true, b.getAttribute('data-agendar')); }); });
@@ -141,6 +174,8 @@
     $('.fab-opt.agenda', fab).addEventListener('click', function () { setF(false); modalSet(true, CFG.service || ''); });
     d.addEventListener('click', function (e) { if (!panel.hidden && !fab.contains(e.target)) setF(false); });
     d.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { setF(false); fbtn.focus(); } });
+    var callOut = function () { if (reduce || !panel.hidden) return; fbtn.classList.remove('call-out'); void fbtn.offsetWidth; fbtn.classList.add('call-out'); };
+    setTimeout(callOut, 3000); setInterval(callOut, 30000);
     var seen = false; try { seen = sessionStorage.getItem('agBubble') === '1'; } catch (_) {}
     if (!seen) setTimeout(function () { if (panel.hidden) { bubble.classList.add('is-shown'); setTimeout(hideB, 14000); } try { sessionStorage.setItem('agBubble', '1'); } catch (_) {} }, 4500);
   }
