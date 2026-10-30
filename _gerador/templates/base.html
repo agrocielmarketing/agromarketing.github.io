@@ -19,8 +19,11 @@
 {% if canonical is not none %}<meta property="og:url" content="{{ abs_url(canonical) }}">{% endif %}
 <meta property="og:image" content="{% block ogimage %}{{ abs_url('assets/hero-equipe-agrociel.webp') }}{% endblock %}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="{{ a('assets/brand/agrociel-icon-32.png') }}">
-<link rel="apple-touch-icon" href="{{ a('assets/brand/agrociel-icon-color.png') }}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="{{ a('assets/fonts/archivo-latin-wdth-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ a('assets/fonts/inter-latin-wght-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ a('assets/css/site.css') }}">
