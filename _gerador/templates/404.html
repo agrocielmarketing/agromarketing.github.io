@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% from "base.html" import ic, waic with context %}
+{% block title %}Página não encontrada | Agrociel{% endblock %}
+{% block description %}A página que você procurou não existe ou mudou de endereço.{% endblock %}
+{% block schema %}{"@context":"https://schema.org","@type":"WebPage","name":"Página não encontrada"}{% endblock %}
+{% block main %}
+<section class="nf"><div class="wrap">
+  <span class="kicker">Erro 404</span>
+  <h1>Página não encontrada</h1>
+  <p>O endereço pode ter mudado. Procure o serviço ou fale com a central.</p>
+  <div class="hero-actions" style="justify-content:center">
+    <a class="btn btn-navy" href="/">{{ ic('home') }} Ir para o início</a>
+    <a class="btn btn-wa" href="https://wa.me/5591993099267?text={{ ('Olá! Não encontrei uma página no site da Agrociel.')|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Falar com a central</a>
+  </div>
+</div></section>
+{% endblock %}

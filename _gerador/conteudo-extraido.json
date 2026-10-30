@@ -1,0 +1,1910 @@
+{
+ "services": [
+  {
+   "slug": "analise-de-solo",
+   "path": "/servicos/analise-de-solo",
+   "name": "Análise de Solo",
+   "group": "PRODUÇÃO E GESTÃO",
+   "area": "Para agronegócio",
+   "lead": "Coleta orientada, encaminhamento e interpretação técnica para compreender as condições do solo e planejar o manejo.",
+   "image": "assets/servicos/analise-de-solo.webp",
+   "audience": "Produtores que desejam conhecer as características do solo antes de planejar correções, adubação ou implantação de culturas.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Amostragem organizada e representativa",
+    "Interpretação técnica dos resultados laboratoriais",
+    "Base confiável para decisões de manejo"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Localização e identificação da área",
+    "Histórico de uso e culturas implantadas",
+    "Informações de manejo e produtividade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Como é feita a coleta?",
+     "a": "A equipe define os pontos e a profundidade de amostragem conforme a área e a finalidade da análise."
+    },
+    {
+     "q": "A mesma análise serve para qualquer cultura?",
+     "a": "A leitura considera a cultura, o sistema de produção, o histórico e as condições específicas da área."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Os resultados e as recomendações dependem da qualidade da amostragem, do laboratório, da cultura, do histórico da área e das condições locais.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Análise de Solo | Agrociel",
+    "description": "Coleta orientada, encaminhamento e interpretação técnica para compreender as condições do solo e planejar o manejo.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Análise de Solo"
+   }
+  },
+  {
+   "slug": "antecipacao-saque-aniversario-fgts",
+   "path": "/servicos/antecipacao-saque-aniversario-fgts",
+   "name": "Antecipação do Saque-Aniversário FGTS",
+   "group": "CRÉDITO DESCOMPLICADO",
+   "area": "Para você",
+   "lead": "Orientação para antecipar valores futuros do saque-aniversário com garantia do saldo disponível no FGTS.",
+   "image": "assets/servicos/antecipacao-saque-aniversario-fgts.webp",
+   "audience": "Trabalhadores elegíveis que optaram pelo saque-aniversário e possuem saldo disponível.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Processo de consulta orientado",
+    "Pagamento vinculado ao saldo do FGTS conforme contrato",
+    "Encaminhamento digital quando disponível"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Há parcela mensal?",
+     "a": "A quitação ocorre conforme a sistemática do FGTS e o contrato da antecipação, não como uma parcela mensal comum."
+    },
+    {
+     "q": "O valor é sempre aprovado?",
+     "a": "Não. Depende do saldo disponível, autorização, regras vigentes e análise da instituição."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Quantidade de parcelas, valor, taxa e elegibilidade seguem regras vigentes e política da instituição parceira. Avalie os efeitos da opção saque-aniversário.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Antecipação do Saque-Aniversário FGTS | Agrociel",
+    "description": "Orientação para antecipar valores futuros do saque-aniversário com garantia do saldo disponível no FGTS.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Antecipação do Saque-Aniversário FGTS"
+   }
+  },
+  {
+   "slug": "aposentadoria-rural",
+   "path": "/servicos/aposentadoria-rural",
+   "name": "Aposentadoria Rural",
+   "group": "BENEFÍCIOS RURAIS",
+   "area": "Para você",
+   "lead": "Assessoria para avaliar informações, organizar o histórico de atividade rural e preparar o protocolo administrativo.",
+   "image": "assets/servicos/aposentadoria-rural.webp",
+   "audience": "Trabalhadores e segurados rurais que desejam compreender a situação do benefício e organizar um pedido administrativo.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Levantamento do histórico rural",
+    "Checklist de documentos por caso",
+    "Acompanhamento administrativo do pedido"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto, CPF e comprovante de residência",
+    "Documentos que demonstrem a atividade rural e o vínculo familiar",
+    "Extratos, certidões e comprovantes relacionados ao benefício analisado"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Quais documentos ajudam a comprovar a atividade rural?",
+     "a": "A análise é individual. A equipe organiza os documentos disponíveis e orienta quais provas podem ser relevantes ao período informado."
+    },
+    {
+     "q": "A assessoria garante a aposentadoria?",
+     "a": "Não. A decisão final é do INSS e depende dos requisitos e das provas do caso."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "O resultado depende dos requisitos aplicáveis, do histórico apresentado, da documentação e da análise do INSS. Não há garantia de concessão.",
+   "consult_mode": "assessoria",
+   "meta": {
+    "title": "Aposentadoria Rural | Agrociel",
+    "description": "Assessoria para avaliar informações, organizar o histórico de atividade rural e preparar o protocolo administrativo.",
+    "context": "assessoria",
+    "mode": "assessoria",
+    "service": "Aposentadoria Rural"
+   }
+  },
+  {
+   "slug": "assistencia-tecnica-rural",
+   "path": "/servicos/assistencia-tecnica-rural",
+   "name": "Assistência Técnica Rural",
+   "group": "PRODUÇÃO E GESTÃO",
+   "area": "Para agronegócio",
+   "lead": "Orientação técnica para apoiar decisões de produção, manejo, planejamento e desenvolvimento da propriedade.",
+   "image": "assets/servicos/assistencia-tecnica-rural.webp",
+   "audience": "Produtores rurais que buscam acompanhamento técnico e organização do processo produtivo.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Diagnóstico da realidade da propriedade",
+    "Planejamento alinhado à atividade e aos objetivos do produtor",
+    "Orientação prática durante a execução"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "O atendimento inclui visita técnica?",
+     "a": "Quando necessária, a visita é planejada conforme a localização, a demanda e a viabilidade operacional."
+    },
+    {
+     "q": "Atende pequenas propriedades?",
+     "a": "Sim. A análise considera o porte, a atividade e a necessidade real de cada produtor."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "As recomendações dependem de vistoria, diagnóstico e condições específicas da atividade, do solo e da propriedade.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Assistência Técnica Rural | Agrociel",
+    "description": "Orientação técnica para apoiar decisões de produção, manejo, planejamento e desenvolvimento da propriedade.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Assistência Técnica Rural"
+   }
+  },
+  {
+   "slug": "avaliacao-de-imoveis-rurais",
+   "path": "/servicos/avaliacao-de-imoveis-rurais",
+   "name": "Avaliação de Imóveis Rurais",
+   "group": "TERRITÓRIO E REGULARIZAÇÃO",
+   "area": "Para agronegócio",
+   "lead": "Análise técnica de características do imóvel rural para apoiar decisões patrimoniais e administrativas.",
+   "image": "assets/servicos/avaliacao-de-imoveis-rurais.webp",
+   "audience": "Proprietários, compradores, vendedores e interessados em conhecer tecnicamente uma propriedade rural.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Levantamento organizado das características do imóvel",
+    "Critérios técnicos adequados à finalidade",
+    "Relatório compatível com o escopo contratado"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "A avaliação define o preço de venda?",
+     "a": "Ela oferece uma referência técnica; a negociação final também pode considerar condições de mercado e interesses das partes."
+    },
+    {
+     "q": "É necessária vistoria?",
+     "a": "Em geral, sim. A equipe confirma a necessidade e o escopo após o atendimento inicial."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "O método, a profundidade e a validade do trabalho dependem da finalidade informada e do profissional responsável pelo serviço.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Avaliação de Imóveis Rurais | Agrociel",
+    "description": "Análise técnica de características do imóvel rural para apoiar decisões patrimoniais e administrativas.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Avaliação de Imóveis Rurais"
+   }
+  },
+  {
+   "slug": "cartao-consignado-e-beneficio",
+   "path": "/servicos/cartao-consignado-e-beneficio",
+   "name": "Cartão Consignado e Cartão Benefício",
+   "group": "CONSIGNADO E BENEFÍCIOS",
+   "area": "Para você",
+   "lead": "Orientação sobre cartões vinculados a convênios e margens específicas, com condições definidas pela instituição emissora.",
+   "image": "assets/servicos/cartao-consignado-e-beneficio.webp",
+   "audience": "Beneficiários e servidores elegíveis às modalidades disponíveis para seu convênio.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Explicação clara das diferenças entre produtos",
+    "Consulta de elegibilidade",
+    "Apoio durante o encaminhamento"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Cartão consignado e cartão benefício são iguais?",
+     "a": "Não. Cada produto possui regras, margens, tarifas e condições próprias definidas pelo emissor e pelo convênio."
+    },
+    {
+     "q": "Ter margem garante contratação?",
+     "a": "Não. A contratação depende de elegibilidade e análise da instituição responsável."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Limite, margem, taxas, saque, anuidade e demais condições variam por produto, convênio e instituição emissora.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Cartão Consignado e Cartão Benefício | Agrociel",
+    "description": "Orientação sobre cartões vinculados a convênios e margens específicas, com condições definidas pela instituição emissora.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Cartão Consignado e Cartão Benefício"
+   }
+  },
+  {
+   "slug": "consorcios",
+   "path": "/servicos/consorcios",
+   "name": "Consórcios de Imóveis, Veículos e Serviços",
+   "group": "PROTEÇÃO E PLANEJAMENTO",
+   "area": "Para você",
+   "lead": "Planejamento de compra por grupo de consórcio, com cartas de crédito e condições administradas por parceiras.",
+   "image": "assets/servicos/consorcios.webp",
+   "audience": "Pessoas e empresas que podem planejar a aquisição sem necessidade de uso imediato do bem ou serviço.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Escolha de categoria e carta compatíveis",
+    "Orientação sobre parcelas, lances e regras",
+    "Apoio para leitura das condições do grupo"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Quando serei contemplado?",
+     "a": "Não existe data garantida. A contemplação segue as regras de sorteio e lance do grupo."
+    },
+    {
+     "q": "Consórcio é sem custo?",
+     "a": "Não. Existem taxa de administração e outros valores previstos no contrato, mesmo sem juros de financiamento."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Consórcio não tem juros de financiamento, mas possui taxa de administração e possíveis cobranças contratuais. Contemplação ocorre por sorteio ou lance e não é garantida.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Consórcios de Imóveis, Veículos e Serviços | Agrociel",
+    "description": "Planejamento de compra por grupo de consórcio, com cartas de crédito e condições administradas por parceiras.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Consórcios de Imóveis, Veículos e Serviços"
+   }
+  },
+  {
+   "slug": "credito-com-garantia-de-imovel",
+   "path": "/servicos/credito-com-garantia-de-imovel",
+   "name": "Crédito com Garantia de Imóvel",
+   "group": "CRÉDITO COM GARANTIA",
+   "area": "Para você",
+   "lead": "Consulta de crédito com imóvel em garantia para objetivos pessoais ou empresariais, conforme análise.",
+   "image": "assets/servicos/credito-com-garantia-de-imovel.webp",
+   "audience": "Proprietários de imóvel elegível que compreendam a garantia e busquem crédito de maior prazo.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Análise orientada da finalidade",
+    "Explicação de custos e etapas",
+    "Encaminhamento à instituição parceira"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira",
+    "Matrícula e documentos do imóvel"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "O imóvel fica em garantia?",
+     "a": "Sim. A operação envolve garantia real conforme contrato e pode prever alienação fiduciária."
+    },
+    {
+     "q": "Existe risco de perder o imóvel?",
+     "a": "A inadimplência pode gerar consequências sobre o bem dado em garantia, conforme o contrato e a legislação aplicável."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A operação utiliza imóvel como garantia e envolve riscos em caso de inadimplência. Condições e aprovação dependem da instituição parceira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Crédito com Garantia de Imóvel | Agrociel",
+    "description": "Consulta de crédito com imóvel em garantia para objetivos pessoais ou empresariais, conforme análise.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Crédito com Garantia de Imóvel"
+   }
+  },
+  {
+   "slug": "credito-com-garantia-de-veiculo",
+   "path": "/servicos/credito-com-garantia-de-veiculo",
+   "name": "Crédito com Garantia de Veículo",
+   "group": "CRÉDITO COM GARANTIA",
+   "area": "Para você",
+   "lead": "Consulta de crédito utilizando veículo elegível como garantia, com condições definidas após análise.",
+   "image": "assets/servicos/credito-com-garantia-de-veiculo.webp",
+   "audience": "Proprietários de veículo que desejam avaliar uma operação com garantia e compreendem seus riscos.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Simulação conforme veículo e perfil",
+    "Orientação sobre vistoria e contrato",
+    "Encaminhamento seguro"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira",
+    "CRLV e informações do veículo"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "O veículo precisa estar quitado?",
+     "a": "A elegibilidade depende das regras da instituição e da situação do veículo."
+    },
+    {
+     "q": "Posso continuar usando o veículo?",
+     "a": "As condições de uso e garantia são definidas no contrato da instituição responsável."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A operação utiliza veículo como garantia e pode envolver alienação fiduciária. Condições e aprovação dependem da instituição parceira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Crédito com Garantia de Veículo | Agrociel",
+    "description": "Consulta de crédito utilizando veículo elegível como garantia, com condições definidas após análise.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Crédito com Garantia de Veículo"
+   }
+  },
+  {
+   "slug": "credito-do-trabalhador-clt",
+   "path": "/servicos/credito-do-trabalhador-clt",
+   "name": "Crédito do Trabalhador — CLT",
+   "group": "CRÉDITO DESCOMPLICADO",
+   "area": "Para você",
+   "lead": "Atendimento para trabalhadores com carteira assinada consultarem modalidades disponíveis conforme vínculo e perfil.",
+   "image": "assets/servicos/credito-do-trabalhador-clt.webp",
+   "audience": "Trabalhadores de empresas privadas com vínculo CLT elegível às ofertas de instituições parceiras.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Consulta conforme vínculo",
+    "Orientação sobre custos e forma de pagamento",
+    "Encaminhamento à instituição parceira"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Todo trabalhador CLT pode contratar?",
+     "a": "Não. Vínculo, empresa, margem, tempo de registro e critérios da instituição podem influenciar."
+    },
+    {
+     "q": "A contratação é garantida?",
+     "a": "Não. Toda proposta passa pela análise e aprovação da instituição responsável."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Disponibilidade, margem, taxa, prazo e aprovação dependem das regras vigentes, vínculo, perfil e instituição parceira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Crédito do Trabalhador — CLT | Agrociel",
+    "description": "Atendimento para trabalhadores com carteira assinada consultarem modalidades disponíveis conforme vínculo e perfil.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Crédito do Trabalhador — CLT"
+   }
+  },
+  {
+   "slug": "credito-pessoal-aposentados-pensionistas",
+   "path": "/servicos/credito-pessoal-aposentados-pensionistas",
+   "name": "Crédito Pessoal para Aposentados e Pensionistas",
+   "group": "CONSIGNADO E BENEFÍCIOS",
+   "area": "Para você",
+   "lead": "Consulta de crédito pessoal conforme o perfil e os produtos formais disponíveis nas instituições parceiras.",
+   "image": "assets/servicos/credito-pessoal-aposentados-pensionistas.webp",
+   "audience": "Aposentados e pensionistas que desejam avaliar uma modalidade diferente do consignado tradicional.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Análise inicial sem promessas",
+    "Orientação sobre custos e forma de pagamento",
+    "Encaminhamento conforme disponibilidade"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Compromete a margem consignável?",
+     "a": "Depende da modalidade. A equipe explica como ocorre o pagamento antes do encaminhamento."
+    },
+    {
+     "q": "Negativado pode contratar?",
+     "a": "Os critérios de análise variam por instituição e produto; não há aprovação garantida."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Taxas, prazos, aprovação e liberação dependem da análise da instituição parceira e podem ser diferentes do crédito consignado.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Crédito Pessoal para Aposentados e Pensionistas | Agrociel",
+    "description": "Consulta de crédito pessoal conforme o perfil e os produtos formais disponíveis nas instituições parceiras.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Crédito Pessoal para Aposentados e Pensionistas"
+   }
+  },
+  {
+   "slug": "credito-por-meio-do-cartao",
+   "path": "/servicos/credito-por-meio-do-cartao",
+   "name": "Crédito por Meio do Cartão",
+   "group": "CRÉDITO DESCOMPLICADO",
+   "area": "Para você",
+   "lead": "Consulta de produtos formais de instituições parceiras que utilizam o cartão como meio de contratação ou pagamento.",
+   "image": "assets/servicos/credito-por-meio-do-cartao.webp",
+   "audience": "Titulares de cartão elegível que desejam conhecer uma solução formal e transparente disponível por parceiro.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Verificação do produto formal disponível",
+    "Explicação de custos e parcelas",
+    "Atendimento com registro claro da proposta"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "É uma compra fictícia?",
+     "a": "Não. A Agrociel não oferece nem recomenda venda simulada. Somente produtos formais e contratualmente identificados."
+    },
+    {
+     "q": "Usa todo o limite?",
+     "a": "O comprometimento depende do valor contratado, custos e regras do emissor ou instituição."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A Agrociel não realiza venda simulada. O serviço só é oferecido quando existe produto financeiro formal, com contrato e instituição responsável.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Crédito por Meio do Cartão | Agrociel",
+    "description": "Consulta de produtos formais de instituições parceiras que utilizam o cartão como meio de contratação ou pagamento.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Crédito por Meio do Cartão"
+   }
+  },
+  {
+   "slug": "credito-rural",
+   "path": "/servicos/credito-rural",
+   "name": "Crédito Rural",
+   "group": "PRODUÇÃO E GESTÃO",
+   "area": "Para agronegócio",
+   "lead": "Orientação para produtores que desejam entender possibilidades de crédito ligadas à atividade rural.",
+   "image": "assets/servicos/credito-rural.webp",
+   "audience": "Produtores rurais com atividade e documentação compatíveis com as linhas eventualmente disponíveis.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Análise inicial da necessidade",
+    "Organização das informações para encaminhamento",
+    "Atendimento integrado entre a realidade produtiva e a solução financeira"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade",
+    "Comprovantes da atividade, renda e orçamento do projeto, quando aplicável"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "A Agrociel libera o crédito?",
+     "a": "Não. A Agrociel orienta e encaminha a proposta; a decisão é da instituição parceira."
+    },
+    {
+     "q": "Quais linhas estão disponíveis?",
+     "a": "A disponibilidade muda conforme parceiro, finalidade, perfil e período. Consulte a equipe antes de iniciar."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Disponibilidade sob consulta. Condições, garantias e aprovação dependem da política e análise da instituição financeira parceira.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Crédito Rural | Agrociel",
+    "description": "Orientação para produtores que desejam entender possibilidades de crédito ligadas à atividade rural.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Crédito Rural"
+   }
+  },
+  {
+   "slug": "emprestimo-consignado-inss",
+   "path": "/servicos/emprestimo-consignado-inss",
+   "name": "Empréstimo Consignado INSS",
+   "group": "CONSIGNADO E BENEFÍCIOS",
+   "area": "Para você",
+   "lead": "Atendimento para aposentados e pensionistas consultarem possibilidades de crédito com parcelas descontadas do benefício.",
+   "image": "assets/servicos/emprestimo-consignado-inss.webp",
+   "audience": "Aposentados e pensionistas do INSS com benefício e margem compatíveis com a modalidade.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Atendimento consultivo",
+    "Simulação conforme margem e perfil",
+    "Encaminhamento seguro à instituição parceira"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "A simulação garante aprovação?",
+     "a": "Não. A aprovação e as condições finais são definidas pela instituição financeira parceira."
+    },
+    {
+     "q": "Preciso pagar antes para liberar?",
+     "a": "Não. Desconfie de pedidos de pagamento antecipado para aprovação ou liberação de crédito."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Taxa, prazo, valor e aprovação dependem da margem, do benefício, do perfil e da política da instituição parceira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Empréstimo Consignado INSS | Agrociel",
+    "description": "Atendimento para aposentados e pensionistas consultarem possibilidades de crédito com parcelas descontadas do benefício.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Empréstimo Consignado INSS"
+   }
+  },
+  {
+   "slug": "emprestimo-na-conta-de-luz",
+   "path": "/servicos/emprestimo-na-conta-de-luz",
+   "name": "Empréstimo na Conta de Luz",
+   "group": "CRÉDITO DESCOMPLICADO",
+   "area": "Para você",
+   "lead": "Consulta de produto em que as parcelas podem ser cobradas na fatura de energia, quando disponível.",
+   "image": "assets/servicos/emprestimo-na-conta-de-luz.webp",
+   "audience": "Titulares de conta de energia em localidades e concessionárias atendidas por parceiros elegíveis.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Consulta de disponibilidade por localidade",
+    "Explicação do fluxo de cobrança",
+    "Apoio no encaminhamento"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira",
+    "Conta de energia recente em nome do solicitante"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Está disponível em qualquer estado?",
+     "a": "Não. A disponibilidade depende da concessionária, da localidade e do parceiro responsável."
+    },
+    {
+     "q": "A aprovação é automática?",
+     "a": "Não. O produto está sujeito aos critérios e à análise da instituição parceira."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Disponibilidade, valor, prazo, taxa e aprovação dependem da localidade, da concessionária e da instituição parceira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Empréstimo na Conta de Luz | Agrociel",
+    "description": "Consulta de produto em que as parcelas podem ser cobradas na fatura de energia, quando disponível.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Empréstimo na Conta de Luz"
+   }
+  },
+  {
+   "slug": "emprestimo-servidor-publico",
+   "path": "/servicos/emprestimo-servidor-publico",
+   "name": "Empréstimo para Servidor Público",
+   "group": "CONSIGNADO E BENEFÍCIOS",
+   "area": "Para você",
+   "lead": "Consulta de soluções consignadas para servidores federais, estaduais e municipais, conforme o convênio disponível.",
+   "image": "assets/servicos/emprestimo-servidor-publico.webp",
+   "audience": "Servidores públicos com vínculo, convênio e margem elegíveis.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Consulta da modalidade compatível",
+    "Orientação sobre margem e documentos",
+    "Encaminhamento à instituição parceira"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Atende todo servidor?",
+     "a": "A possibilidade depende de convênio ativo, vínculo, margem e critérios da instituição parceira."
+    },
+    {
+     "q": "A parcela é descontada em folha?",
+     "a": "Quando a modalidade consignada é aprovada, o desconto segue as regras do convênio e do contrato."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Convênio, margem, taxa, prazo e aprovação dependem das regras vigentes e da instituição parceira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Empréstimo para Servidor Público | Agrociel",
+    "description": "Consulta de soluções consignadas para servidores federais, estaduais e municipais, conforme o convênio disponível.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Empréstimo para Servidor Público"
+   }
+  },
+  {
+   "slug": "financiamento-de-imoveis",
+   "path": "/servicos/financiamento-de-imoveis",
+   "name": "Financiamento de Imóveis",
+   "group": "CRÉDITO COM GARANTIA",
+   "area": "Para você",
+   "lead": "Assessoria no encaminhamento de financiamento para aquisição de imóvel residencial ou comercial.",
+   "image": "assets/servicos/financiamento-de-imoveis.webp",
+   "audience": "Pessoas e empresas que desejam avaliar capacidade de financiamento e documentação para aquisição de imóvel.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Simulação inicial",
+    "Orientação documental",
+    "Acompanhamento do encaminhamento à instituição"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira",
+    "Documentos e informações do imóvel pretendido"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "A simulação garante o financiamento?",
+     "a": "Não. O financiamento depende da análise de crédito, do imóvel e das regras da instituição."
+    },
+    {
+     "q": "É necessário avaliar o imóvel?",
+     "a": "A instituição pode exigir avaliação e documentação específica antes da contratação."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Entrada, taxa, prazo, valor financiável e aprovação dependem do perfil, do imóvel e da política da instituição financeira.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Financiamento de Imóveis | Agrociel",
+    "description": "Assessoria no encaminhamento de financiamento para aquisição de imóvel residencial ou comercial.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Financiamento de Imóveis"
+   }
+  },
+  {
+   "slug": "georreferenciamento-rural",
+   "path": "/servicos/georreferenciamento-rural",
+   "name": "Georreferenciamento Rural",
+   "group": "TERRITÓRIO E REGULARIZAÇÃO",
+   "area": "Para agronegócio",
+   "lead": "Levantamento técnico para identificar limites, coordenadas e características do imóvel rural com precisão.",
+   "image": "assets/servicos/georreferenciamento-rural.webp",
+   "audience": "Proprietários, produtores, compradores, vendedores e famílias que precisam organizar informações territoriais do imóvel rural.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Delimitação técnica mais clara da área",
+    "Base para processos de regularização e atualização documental",
+    "Acompanhamento próximo em cada etapa"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "O levantamento é feito na propriedade?",
+     "a": "Sim. Após a análise inicial, a equipe orienta sobre a vistoria de campo e o levantamento necessário para o caso."
+    },
+    {
+     "q": "Todo imóvel rural precisa do mesmo procedimento?",
+     "a": "Não. As exigências variam conforme a situação do imóvel, sua finalidade e o processo administrativo envolvido."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "O escopo, o prazo e a necessidade de certificação dependem da área, da documentação disponível e das exigências do órgão competente.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Georreferenciamento Rural | Agrociel",
+    "description": "Levantamento técnico para identificar limites, coordenadas e características do imóvel rural com precisão.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Georreferenciamento Rural"
+   }
+  },
+  {
+   "slug": "georreferenciamento-urbano",
+   "path": "/servicos/georreferenciamento-urbano",
+   "name": "Georreferenciamento Urbano",
+   "group": "TERRITÓRIO E REGULARIZAÇÃO",
+   "area": "Para agronegócio",
+   "lead": "Medição e representação técnica de lotes, terrenos e áreas urbanas para apoiar projetos e regularizações.",
+   "image": "assets/servicos/georreferenciamento-urbano.webp",
+   "audience": "Proprietários, construtores, compradores e pessoas que precisam conhecer com precisão os limites de uma área urbana.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Informações confiáveis sobre medidas e confrontações",
+    "Apoio técnico para projetos e processos documentais",
+    "Redução de dúvidas antes de decisões sobre o imóvel"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Serve para desmembramento de terreno?",
+     "a": "Pode integrar o processo, conforme as regras municipais e registrais aplicáveis ao imóvel."
+    },
+    {
+     "q": "A Agrociel avalia a documentação antes?",
+     "a": "Sim. O atendimento começa com uma análise das informações disponíveis para definir o caminho técnico adequado."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A finalidade do levantamento define o método, as peças técnicas e as exigências do município, cartório ou órgão responsável.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Georreferenciamento Urbano | Agrociel",
+    "description": "Medição e representação técnica de lotes, terrenos e áreas urbanas para apoiar projetos e regularizações.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Georreferenciamento Urbano"
+   }
+  },
+  {
+   "slug": "licenciamento-ambiental",
+   "path": "/servicos/licenciamento-ambiental",
+   "name": "Licenciamento Ambiental",
+   "group": "TERRITÓRIO E REGULARIZAÇÃO",
+   "area": "Para agronegócio",
+   "lead": "Orientação técnica e organização das etapas ambientais aplicáveis a atividades e empreendimentos rurais.",
+   "image": "assets/servicos/licenciamento-ambiental.webp",
+   "audience": "Produtores e empreendedores que precisam compreender obrigações e procedimentos ambientais da atividade.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Análise inicial do enquadramento",
+    "Organização técnica e documental",
+    "Acompanhamento do processo conforme o escopo"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Toda atividade rural precisa de licença?",
+     "a": "As exigências variam. A análise inicial ajuda a identificar o enquadramento aplicável."
+    },
+    {
+     "q": "A Agrociel garante a licença?",
+     "a": "Não. A equipe presta assessoria técnica; a decisão cabe ao órgão ambiental."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "O enquadramento, os estudos e a decisão dependem da atividade, localização e análise do órgão ambiental competente.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Licenciamento Ambiental | Agrociel",
+    "description": "Orientação técnica e organização das etapas ambientais aplicáveis a atividades e empreendimentos rurais.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Licenciamento Ambiental"
+   }
+  },
+  {
+   "slug": "portabilidade-e-refinanciamento",
+   "path": "/servicos/portabilidade-e-refinanciamento",
+   "name": "Portabilidade e Refinanciamento",
+   "group": "CONSIGNADO E BENEFÍCIOS",
+   "area": "Para você",
+   "lead": "Análise de contrato existente para verificar possibilidades de transferência ou renegociação conforme oferta disponível.",
+   "image": "assets/servicos/portabilidade-e-refinanciamento.webp",
+   "audience": "Clientes com contrato ativo que desejam entender condições de portabilidade ou refinanciamento.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Leitura inicial do contrato",
+    "Comparação objetiva das condições disponíveis",
+    "Orientação sobre diferenças entre as operações"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto e CPF",
+    "Comprovantes de renda, benefício ou vínculo, conforme a modalidade",
+    "Dados bancários e documentos adicionais solicitados pela instituição parceira",
+    "Extrato ou demonstrativo atualizado do contrato"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Portabilidade libera dinheiro?",
+     "a": "A portabilidade transfere o saldo entre instituições. Qualquer valor adicional depende de operação distinta e nova análise."
+    },
+    {
+     "q": "A parcela sempre diminui?",
+     "a": "Não. O resultado depende do saldo, taxa, prazo e proposta aprovada."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Portabilidade e refinanciamento são operações diferentes. Redução de custo, novo prazo ou liberação adicional não são garantidos.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Portabilidade e Refinanciamento | Agrociel",
+    "description": "Análise de contrato existente para verificar possibilidades de transferência ou renegociação conforme oferta disponível.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Portabilidade e Refinanciamento"
+   }
+  },
+  {
+   "slug": "regularizacao-rural",
+   "path": "/servicos/regularizacao-rural",
+   "name": "Regularização Rural",
+   "group": "TERRITÓRIO E REGULARIZAÇÃO",
+   "area": "Para agronegócio",
+   "lead": "Apoio técnico e administrativo para organizar informações e encaminhar etapas de regularização do imóvel rural.",
+   "image": "assets/servicos/regularizacao-rural.webp",
+   "audience": "Proprietários e famílias rurais com pendências cadastrais, territoriais ou documentais.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Levantamento inicial das pendências",
+    "Organização de documentos e etapas",
+    "Orientação sobre os órgãos e procedimentos envolvidos"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Vocês verificam a situação do imóvel?",
+     "a": "A equipe faz uma análise inicial com base nos documentos e informações apresentados."
+    },
+    {
+     "q": "A regularização é imediata?",
+     "a": "Não. Cada caso possui etapas próprias e pode depender de terceiros e de órgãos públicos."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A conclusão depende da situação do imóvel, da documentação e da análise dos órgãos competentes. Não há garantia de deferimento ou prazo fixo.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Regularização Rural | Agrociel",
+    "description": "Apoio técnico e administrativo para organizar informações e encaminhar etapas de regularização do imóvel rural.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Regularização Rural"
+   }
+  },
+  {
+   "slug": "revisao-de-beneficios",
+   "path": "/servicos/revisao-de-beneficios",
+   "name": "Revisão de Benefícios",
+   "group": "ASSESSORIA ADMINISTRATIVA",
+   "area": "Para você",
+   "lead": "Análise administrativa de informações e documentos para verificar se há fundamento para solicitar revisão.",
+   "image": "assets/servicos/revisao-de-beneficios.webp",
+   "audience": "Beneficiários do INSS que desejam compreender o cálculo, períodos ou informações consideradas no benefício.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Conferência inicial do histórico",
+    "Identificação de documentos que precisam ser reunidos",
+    "Orientação clara sobre a via administrativa"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Carta de concessão e memória de cálculo, quando disponíveis",
+    "Extrato CNIS e documentos de contribuição",
+    "Documentos pessoais e comprovantes relacionados ao ponto analisado"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Toda diferença gera direito a revisão?",
+     "a": "Não. É necessário analisar os dados, o histórico e as regras aplicáveis antes de qualquer solicitação."
+    },
+    {
+     "q": "A revisão sempre aumenta o benefício?",
+     "a": "Não. O resultado depende da análise administrativa e pode não gerar alteração favorável."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A análise inicial não garante revisão favorável. O resultado depende das regras aplicáveis, dos documentos e da decisão do INSS.",
+   "consult_mode": "assessoria",
+   "meta": {
+    "title": "Revisão de Benefícios | Agrociel",
+    "description": "Análise administrativa de informações e documentos para verificar se há fundamento para solicitar revisão.",
+    "context": "assessoria",
+    "mode": "assessoria",
+    "service": "Revisão de Benefícios"
+   }
+  },
+  {
+   "slug": "salario-maternidade-rural",
+   "path": "/servicos/salario-maternidade-rural",
+   "name": "Salário-Maternidade Rural",
+   "group": "BENEFÍCIOS RURAIS",
+   "area": "Para você",
+   "lead": "Assessoria administrativa para organizar documentos, analisar o histórico rural e acompanhar o pedido do benefício.",
+   "image": "assets/servicos/salario-maternidade-rural.webp",
+   "audience": "Trabalhadoras e seguradas rurais que desejam avaliar a possibilidade de solicitar o salário-maternidade pela via administrativa.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Análise administrativa do caso",
+    "Organização das provas de atividade rural",
+    "Acompanhamento das etapas do requerimento"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento oficial com foto, CPF e comprovante de residência",
+    "Documentos que demonstrem a atividade rural e o vínculo familiar",
+    "Extratos, certidões e comprovantes relacionados ao benefício analisado"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Quem trabalhou em atividade rural pode solicitar?",
+     "a": "A possibilidade depende da categoria, do período, da documentação e dos critérios administrativos aplicáveis ao caso."
+    },
+    {
+     "q": "A documentação garante o benefício?",
+     "a": "Não. Os documentos são analisados pelo INSS em conjunto com as regras e informações do requerimento."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "A concessão depende dos critérios do programa, dos documentos apresentados e da análise do INSS. Não há garantia de aprovação.",
+   "consult_mode": "assessoria",
+   "meta": {
+    "title": "Salário-Maternidade Rural | Agrociel",
+    "description": "Assessoria administrativa para organizar documentos, analisar o histórico rural e acompanhar o pedido do benefício.",
+    "context": "assessoria",
+    "mode": "assessoria",
+    "service": "Salário-Maternidade Rural"
+   }
+  },
+  {
+   "slug": "seguro-de-carro-e-moto",
+   "path": "/servicos/seguro-de-carro-e-moto",
+   "name": "Seguro de Carro e Moto",
+   "group": "PROTEÇÃO E PLANEJAMENTO",
+   "area": "Para você",
+   "lead": "Cotação de proteção veicular securitária conforme perfil, veículo e coberturas oferecidas pelas seguradoras parceiras.",
+   "image": "assets/servicos/seguro-de-carro-e-moto.webp",
+   "audience": "Proprietários de carros e motos que desejam comparar proposta e coberturas antes de contratar.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Cotação conforme perfil",
+    "Orientação sobre coberturas e franquias",
+    "Apoio para compreender a proposta"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documento pessoal e dados de contato",
+    "CRLV e informações do veículo",
+    "Dados de uso e perfil solicitados pela seguradora"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "A cobertura é sempre pela Tabela FIPE?",
+     "a": "O critério e o percentual constam na proposta e na apólice; podem variar por produto."
+    },
+    {
+     "q": "Guincho está incluído?",
+     "a": "Depende da assistência contratada, seus limites e condições. Confirme na proposta."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "Coberturas, assistência, franquia, indenização e veículo reserva dependem da proposta e das condições da apólice.",
+   "consult_mode": "financeiro",
+   "meta": {
+    "title": "Seguro de Carro e Moto | Agrociel",
+    "description": "Cotação de proteção veicular securitária conforme perfil, veículo e coberturas oferecidas pelas seguradoras parceiras.",
+    "context": "financeiro",
+    "mode": "financeiro",
+    "service": "Seguro de Carro e Moto"
+   }
+  },
+  {
+   "slug": "servicos-administrativos-rurais",
+   "path": "/servicos/servicos-administrativos-rurais",
+   "name": "Serviços Administrativos Rurais",
+   "group": "PRODUÇÃO E GESTÃO",
+   "area": "Para agronegócio",
+   "lead": "Organização e apoio em rotinas cadastrais e documentais ligadas à propriedade e à atividade rural.",
+   "image": "assets/servicos/servicos-administrativos-rurais.webp",
+   "audience": "Produtores e famílias que precisam colocar documentos, cadastros e processos administrativos em ordem.",
+   "panel_title": "Informação clara em cada etapa",
+   "panel_text": "A equipe começa entendendo sua necessidade e as informações que você já possui. Depois, explica o escopo do atendimento, as condições e o que depende de terceiros, órgãos ou instituições.",
+   "benefits": [
+    "Mapeamento das demandas",
+    "Checklist documental claro",
+    "Acompanhamento das etapas sob responsabilidade da assessoria"
+   ],
+   "docs_note": "A lista exata é confirmada após o primeiro atendimento.",
+   "docs": [
+    "Documentos pessoais do proprietário ou responsável",
+    "Documentos disponíveis do imóvel ou da atividade rural",
+    "Informações de localização e acesso à propriedade"
+   ],
+   "steps": [
+    {
+     "t": "Contato",
+     "p": "Você chama a Agrociel e informa o serviço de interesse."
+    },
+    {
+     "t": "Triagem",
+     "p": "A equipe entende o caso e orienta as informações iniciais."
+    },
+    {
+     "t": "Análise",
+     "p": "Documentos, condições e viabilidade são avaliados conforme o serviço."
+    },
+    {
+     "t": "Próximo passo",
+     "p": "Você recebe orientação e acompanhamento dentro do escopo informado."
+    }
+   ],
+   "faq": [
+    {
+     "q": "Quais rotinas podem ser atendidas?",
+     "a": "A equipe verifica a demanda e informa o que pode ser realizado conforme o caso e a disponibilidade."
+    },
+    {
+     "q": "Posso enviar os documentos pelo WhatsApp?",
+     "a": "No primeiro contato, envie apenas informações básicas. A equipe orientará o canal seguro e os documentos necessários."
+    },
+    {
+     "q": "Como pedir uma análise inicial?",
+     "a": "Clique no botão de WhatsApp. A mensagem já identifica este serviço, e a equipe orientará o que é seguro enviar no primeiro contato."
+    }
+   ],
+   "notice_title": "Informação importante",
+   "notice": "O serviço é administrativo e seu resultado pode depender de sistemas, órgãos públicos e documentos de terceiros.",
+   "consult_mode": "agro",
+   "meta": {
+    "title": "Serviços Administrativos Rurais | Agrociel",
+    "description": "Organização e apoio em rotinas cadastrais e documentais ligadas à propriedade e à atividade rural.",
+    "context": "agro",
+    "mode": "agro",
+    "service": "Serviços Administrativos Rurais"
+   }
+  }
+ ],
+ "categories": {
+  "/para-voce": {
+   "title": "Para você",
+   "lead": "Assessoria administrativa e soluções financeiras reunidas para você avançar com clareza, segurança e atendimento humano.",
+   "eyebrow": "SOLUÇÕES PARA CADA MOMENTO DA SUA VIDA",
+   "image": "assets/servicos/emprestimo-consignado-inss.webp",
+   "sections": [
+    {
+     "id": "assessoria",
+     "title": "Soluções em Assessoria",
+     "text": "Organização, protocolo e acompanhamento administrativo de benefícios, com atenção a cada etapa. Selecione um serviço para abrir a página completa.",
+     "cards": [
+      {
+       "slug": "salario-maternidade-rural",
+       "tag": "Benefícios rurais",
+       "title": "Salário-Maternidade Rural",
+       "text": "Assessoria administrativa para organizar documentos, analisar o histórico rural e acompanhar o pedido do benefício."
+      },
+      {
+       "slug": "aposentadoria-rural",
+       "tag": "Benefícios rurais",
+       "title": "Aposentadoria Rural",
+       "text": "Assessoria para avaliar informações, organizar o histórico de atividade rural e preparar o protocolo administrativo."
+      },
+      {
+       "slug": "revisao-de-beneficios",
+       "tag": "Assessoria administrativa",
+       "title": "Revisão de Benefícios",
+       "text": "Análise administrativa de informações e documentos para verificar se há fundamento para solicitar revisão."
+      }
+     ]
+    },
+    {
+     "id": "financeiro",
+     "title": "Soluções Financeiras",
+     "text": "Atendimento e encaminhamento de propostas às instituições parceiras com clareza e segurança. Selecione um serviço para abrir a página completa.",
+     "cards": [
+      {
+       "slug": "emprestimo-consignado-inss",
+       "tag": "Consignado e benefícios",
+       "title": "Empréstimo Consignado INSS",
+       "text": "Atendimento para aposentados e pensionistas consultarem possibilidades de crédito com parcelas descontadas do benefício."
+      },
+      {
+       "slug": "emprestimo-servidor-publico",
+       "tag": "Consignado e benefícios",
+       "title": "Empréstimo para Servidor Público",
+       "text": "Consulta de soluções consignadas para servidores federais, estaduais e municipais, conforme o convênio disponível."
+      },
+      {
+       "slug": "cartao-consignado-e-beneficio",
+       "tag": "Consignado e benefícios",
+       "title": "Cartão Consignado e Cartão Benefício",
+       "text": "Orientação sobre cartões vinculados a convênios e margens específicas, com condições definidas pela instituição emissora."
+      },
+      {
+       "slug": "credito-pessoal-aposentados-pensionistas",
+       "tag": "Consignado e benefícios",
+       "title": "Crédito Pessoal para Aposentados e Pensionistas",
+       "text": "Consulta de crédito pessoal conforme o perfil e os produtos formais disponíveis nas instituições parceiras."
+      },
+      {
+       "slug": "portabilidade-e-refinanciamento",
+       "tag": "Consignado e benefícios",
+       "title": "Portabilidade e Refinanciamento",
+       "text": "Análise de contrato existente para verificar possibilidades de transferência ou renegociação conforme oferta disponível."
+      },
+      {
+       "slug": "financiamento-de-imoveis",
+       "tag": "Crédito com garantia",
+       "title": "Financiamento de Imóveis",
+       "text": "Assessoria no encaminhamento de financiamento para aquisição de imóvel residencial ou comercial."
+      },
+      {
+       "slug": "credito-com-garantia-de-imovel",
+       "tag": "Crédito com garantia",
+       "title": "Crédito com Garantia de Imóvel",
+       "text": "Consulta de crédito com imóvel em garantia para objetivos pessoais ou empresariais, conforme análise."
+      },
+      {
+       "slug": "credito-com-garantia-de-veiculo",
+       "tag": "Crédito com garantia",
+       "title": "Crédito com Garantia de Veículo",
+       "text": "Consulta de crédito utilizando veículo elegível como garantia, com condições definidas após análise."
+      },
+      {
+       "slug": "emprestimo-na-conta-de-luz",
+       "tag": "Crédito descomplicado",
+       "title": "Empréstimo na Conta de Luz",
+       "text": "Consulta de produto em que as parcelas podem ser cobradas na fatura de energia, quando disponível."
+      },
+      {
+       "slug": "antecipacao-saque-aniversario-fgts",
+       "tag": "Crédito descomplicado",
+       "title": "Antecipação do Saque-Aniversário FGTS",
+       "text": "Orientação para antecipar valores futuros do saque-aniversário com garantia do saldo disponível no FGTS."
+      },
+      {
+       "slug": "credito-por-meio-do-cartao",
+       "tag": "Crédito descomplicado",
+       "title": "Crédito por Meio do Cartão",
+       "text": "Consulta de produtos formais de instituições parceiras que utilizam o cartão como meio de contratação ou pagamento."
+      },
+      {
+       "slug": "credito-do-trabalhador-clt",
+       "tag": "Crédito descomplicado",
+       "title": "Crédito do Trabalhador — CLT",
+       "text": "Atendimento para trabalhadores com carteira assinada consultarem modalidades disponíveis conforme vínculo e perfil."
+      },
+      {
+       "slug": "seguro-de-carro-e-moto",
+       "tag": "Proteção e planejamento",
+       "title": "Seguro de Carro e Moto",
+       "text": "Cotação de proteção veicular securitária conforme perfil, veículo e coberturas oferecidas pelas seguradoras parceiras."
+      },
+      {
+       "slug": "consorcios",
+       "tag": "Proteção e planejamento",
+       "title": "Consórcios de Imóveis, Veículos e Serviços",
+       "text": "Planejamento de compra por grupo de consórcio, com cartas de crédito e condições administradas por parceiras."
+      }
+     ]
+    }
+   ],
+   "meta": {}
+  },
+  "/agronegocio": {
+   "title": "Para agronegócio",
+   "lead": "Serviços técnicos, territoriais e administrativos conduzidos por consultores que conhecem a realidade de quem produz.",
+   "eyebrow": "SOLUÇÕES PARA QUEM FAZ O CAMPO AVANÇAR",
+   "image": "assets/servicos/georreferenciamento-rural.webp",
+   "sections": [
+    {
+     "id": null,
+     "title": "Soluções para o Agronegócio",
+     "text": "Serviços técnicos, territoriais e administrativos para apoiar quem produz e cuida da terra. Selecione um serviço para abrir a página completa.",
+     "cards": [
+      {
+       "slug": "georreferenciamento-rural",
+       "tag": "Território e regularização",
+       "title": "Georreferenciamento Rural",
+       "text": "Levantamento técnico para identificar limites, coordenadas e características do imóvel rural com precisão."
+      },
+      {
+       "slug": "georreferenciamento-urbano",
+       "tag": "Território e regularização",
+       "title": "Georreferenciamento Urbano",
+       "text": "Medição e representação técnica de lotes, terrenos e áreas urbanas para apoiar projetos e regularizações."
+      },
+      {
+       "slug": "assistencia-tecnica-rural",
+       "tag": "Produção e gestão",
+       "title": "Assistência Técnica Rural",
+       "text": "Orientação técnica para apoiar decisões de produção, manejo, planejamento e desenvolvimento da propriedade."
+      },
+      {
+       "slug": "analise-de-solo",
+       "tag": "Produção e gestão",
+       "title": "Análise de Solo",
+       "text": "Coleta orientada, encaminhamento e interpretação técnica para compreender as condições do solo e planejar o manejo."
+      },
+      {
+       "slug": "regularizacao-rural",
+       "tag": "Território e regularização",
+       "title": "Regularização Rural",
+       "text": "Apoio técnico e administrativo para organizar informações e encaminhar etapas de regularização do imóvel rural."
+      },
+      {
+       "slug": "credito-rural",
+       "tag": "Produção e gestão",
+       "title": "Crédito Rural",
+       "text": "Orientação para produtores que desejam entender possibilidades de crédito ligadas à atividade rural."
+      },
+      {
+       "slug": "avaliacao-de-imoveis-rurais",
+       "tag": "Território e regularização",
+       "title": "Avaliação de Imóveis Rurais",
+       "text": "Análise técnica de características do imóvel rural para apoiar decisões patrimoniais e administrativas."
+      },
+      {
+       "slug": "servicos-administrativos-rurais",
+       "tag": "Produção e gestão",
+       "title": "Serviços Administrativos Rurais",
+       "text": "Organização e apoio em rotinas cadastrais e documentais ligadas à propriedade e à atividade rural."
+      },
+      {
+       "slug": "licenciamento-ambiental",
+       "tag": "Território e regularização",
+       "title": "Licenciamento Ambiental",
+       "text": "Orientação técnica e organização das etapas ambientais aplicáveis a atividades e empreendimentos rurais."
+      }
+     ]
+    }
+   ],
+   "meta": {
+    "title": "Para agronegócio | Agrociel",
+    "description": "Serviços técnicos, territoriais e administrativos conduzidos por consultores que conhecem a realidade de quem produz.",
+    "context": "agro",
+    "mode": "agro",
+    "service": ""
+   }
+  }
+ },
+ "home_meta": {
+  "title": "Agrociel Soluções Integradas",
+  "description": "Soluções integradas para o agronegócio, assessoria administrativa e soluções financeiras.",
+  "context": "geral",
+  "mode": "dynamic",
+  "service": ""
+ }
+}

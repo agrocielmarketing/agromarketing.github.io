@@ -15,7 +15,8 @@ Arquivo lido pelas skills de marketing (seo-audit, programmatic-seo, site-archit
 - Soluções em Assessoria Previdenciária e Soluções Financeiras: todo o Brasil, com atendimento digital.
 - Soluções para o Agronegócio: atuação principal em Aurora do Pará, Mãe do Rio, Capitão Poço, Ipixuna do Pará e Paragominas, e em todo o estado do Pará. Alguns serviços do agro podem ser atendidos em outros estados, mediante análise prévia de cada caso.
 - Forma de dizer no site: "Atendemos todo o estado do Pará, com atuação próxima em Aurora do Pará, Mãe do Rio, Capitão Poço, Ipixuna do Pará e Paragominas. Assessoria previdenciária e soluções financeiras em todo o Brasil."
-- Em Soluções Financeiras atua como correspondente bancário de instituições parceiras (C6 Bank, Facta Financeira, Banco PAN, Digio, iCred, BMG, Paraná Banco e outras). Não é banco; operações sujeitas a análise e aprovação; não cobra pagamento antecipado para liberar crédito.
+- Em Soluções Financeiras a Agrociel NÃO é correspondente bancário (o CNPJ da empresa não é correspondente). Atua em parceria com promotoras de crédito autorizadas, prestando orientação, organização de documentos e acompanhamento. Não é banco; operações sujeitas a análise e aprovação da instituição; não cobra pagamento antecipado para liberar crédito.
+- Não citar bancos como "parceiros" da Agrociel nem usar a expressão "correspondente bancário" para a empresa. Texto aprovado da parceria: a definir pelo dono (opções enviadas em 30/10/2026).
 
 ### Serviços (cada um tem página própria no site)
 - Agronegócio: Georreferenciamento Rural, Georreferenciamento Urbano, Assistência Técnica Rural, Análise de Solo, Regularização Rural, Crédito Rural, Avaliação de Imóveis Rurais, Serviços Administrativos Rurais, Licenciamento Ambiental.
@@ -45,7 +46,7 @@ Arquivo lido pelas skills de marketing (seo-audit, programmatic-seo, site-archit
 - Transparência: deixa claro o que depende de terceiros (órgãos, bancos) e nunca cobra para liberar crédito.
 
 ## Objections
-- "É golpe?" → CNPJ visível, endereço físico, sem cobrança antecipada, correspondente de bancos conhecidos.
+- "É golpe?" → CNPJ visível, endereço físico, sem cobrança antecipada, parceria com promotoras de crédito autorizadas.
 - "É longe?" → atendimento digital em todo o Brasil conforme o serviço.
 - "É caro/complicado?" → primeira orientação pelo WhatsApp, lista de documentos por caso.
 - Fora do perfil (não atender): consignado para beneficiários de BPC/LOAS.
@@ -61,7 +62,7 @@ Arquivo lido pelas skills de marketing (seo-audit, programmatic-seo, site-archit
 - Visual: azul-marinho #06255f, verde #0ca936, amarelo #ffb300; fonte de títulos Archivo, texto Inter; cantos retos.
 
 ## Proof Points
-- Matriz no Pará com endereço público; CNPJ ativo; correspondente de bancos parceiros.
+- Matriz no Pará com endereço público; CNPJ ativo; parceria com promotoras de crédito autorizadas.
 - 1 ano de estrutura física; atuação em 5 municípios do nordeste paraense e em todo o Pará no agro; assessoria e financeiro em todo o Brasil.
 - Número de clientes atendidos: não informado.
 - Depoimentos: ainda não há depoimentos reais autorizados. Não publicar depoimentos de exemplo como se fossem reais; coletar depoimentos verdadeiros (WhatsApp ou avaliações do Perfil da Empresa no Google).
@@ -77,6 +78,7 @@ Arquivo lido pelas skills de marketing (seo-audit, programmatic-seo, site-archit
 
 ## Learnings
 - Fotos: usar apenas pessoas brasileiras e a logo oficial nas camisas.
+- Títulos longos (ex.: Georreferenciamento) não podem ser cortados: conferir em computador e celular.
 
 ## Changelog
 - 30/10/2026: versão inicial criada a partir do site atual e das informações do dono.

@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% from "base.html" import ic, waic with context %}
+{% if page == 'agronegocio' %}
+  {% set t = "Soluções para o Agronegócio no Pará | Agrociel" %}
+  {% set dsc = "Georreferenciamento, regularização rural, licenciamento, análise de solo e crédito rural em todo o Pará, com atuação próxima em Aurora do Pará, Paragominas e região." %}
+  {% set h1 = "Soluções para o agronegócio no Pará" %}
+  {% set lead = "Território, regularização, produção e crédito rural para quem produz. Atendemos todo o estado, com atuação próxima em Aurora do Pará, Mãe do Rio, Capitão Poço, Ipixuna do Pará e Paragominas." %}
+  {% set img = "assets/servicos/georreferenciamento-rural.webp" %}
+  {% set chips = [("pin", "Todo o estado do Pará"), ("sprout", "9 serviços para o campo")] %}
+{% else %}
+  {% set t = "Assessoria previdenciária e soluções financeiras | Agrociel" %}
+  {% set dsc = "Aposentadoria rural, salário-maternidade, revisão de benefícios, consignado INSS, portabilidade e mais. Atendimento em todo o Brasil pelo WhatsApp." %}
+  {% set h1 = "Soluções para você" %}
+  {% set lead = "Assessoria previdenciária e soluções financeiras reunidas para você avançar com clareza, segurança e atendimento humano, em todo o Brasil." %}
+  {% set img = "assets/servicos/emprestimo-consignado-inss.webp" %}
+  {% set chips = [("globe", "Atendimento em todo o Brasil"), ("shield", "Sem cobrança antecipada")] %}
+{% endif %}
+{% block title %}{{ t }}{% endblock %}
+{% block description %}{{ dsc }}{% endblock %}
+{% block ogimage %}{{ abs_url(img) }}{% endblock %}
+{% block schema %}
+{"@context":"https://schema.org","@graph":[
+{"@type":"CollectionPage","name":{{ h1|tojson }},"url":"{{ abs_url(canonical) }}","description":{{ dsc|tojson }},"isPartOf":{"@id":"{{ abs_url() }}#site"},
+"hasPart":[{% for k, f, svcs, sec in blocos %}{% for x in svcs %}{"@type":"Service","name":{{ x.name|tojson }},"url":"{{ abs_url(x.url) }}"}{{ "," if not loop.last }}{% endfor %}{{ "," if not loop.last }}{% endfor %}]},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"{{ abs_url() }}"},{"@type":"ListItem","position":2,"name":{{ h1|tojson }},"item":"{{ abs_url(canonical) }}"}]}
+]}
+{% endblock %}
+{% block main %}
+<section class="page-hero draw">
+  {{ topo|safe }}
+  <div class="page-hero-copy">
+    <ol class="crumbs"><li><a href="{{ u() }}">Início</a></li><li aria-current="page">{{ 'Agronegócio' if page == 'agronegocio' else 'Para você' }}</li></ol>
+    <h1 style="--lw:{{ h1.split()|map('length')|max }}">{{ h1 }}</h1>
+    <p class="page-hero-lead">{{ lead }}</p>
+    <div class="hero-chips">{% for i, c in chips %}<span>{{ ic(i) }}{{ c }}</span>{% endfor %}</div>
+    <div class="hero-actions">
+      <a class="btn btn-yellow" href="https://wa.me/5591993099267?text={{ ('Olá! Vim pela página ' ~ h1 ~ ' e quero falar com a central.')|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Falar com a central</a>
+      <button class="btn btn-ghost" type="button" data-agendar="">{{ ic('cal') }} Agendar</button>
+    </div>
+  </div>
+  <div class="page-hero-img"><img src="{{ a(img) }}" alt="" width="1200" height="800" fetchpriority="high"></div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    {% for k, f, svcs, sec in blocos %}
+    {% set grupos = [] %}{% for x in svcs %}{% if x.grupo not in grupos %}{% set _ = grupos.append(x.grupo) %}{% endif %}{% endfor %}
+    <div class="cat-block" id="{{ k }}">
+      <div class="cat-intro" data-rv>
+        <div><span class="kicker">{{ f.cobertura }}</span><h2>{{ f.titulo }}</h2><p>{{ sec.text|replace(' Selecione um serviço para abrir a página completa.', '') }}</p></div>
+        <button class="btn btn-navy" type="button" data-agendar="">{{ ic('cal') }} Agendar atendimento</button>
+      </div>
+      {% if grupos|length > 1 %}
+      <div class="filters" data-filters="cards-{{ k }}" role="group" aria-label="Filtrar {{ f.titulo }}">
+        <button class="chip" type="button" data-group="all" aria-pressed="true">Todos ({{ svcs|length }})</button>
+        {% for g in grupos %}<button class="chip" type="button" data-group="{{ g }}" aria-pressed="false">{{ g }}</button>{% endfor %}
+      </div>
+      {% endif %}
+      <div class="cards" id="cards-{{ k }}">
+        {% for x in svcs %}
+        <a class="card{{ ' agro' if k == 'agro' else '' }}" href="{{ u(x.url) }}" data-group="{{ x.grupo }}" data-rv>
+          <div class="card-img"><img src="{{ a(x.image) }}" alt="{{ x.name }}" width="{{ x.img_w }}" height="{{ x.img_h }}" loading="lazy"></div>
+          <div class="card-body"><span class="card-tag">{{ x.grupo }}</span><h3>{{ x.name }}</h3><p>{{ x.card_text }}</p><span class="card-more">Ver o serviço {{ ic('arrow') }}</span></div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sec band draw">
+  {{ topo|safe }}
+  <div class="wrap">
+    <span class="kicker" style="color:var(--yellow)">Atendimento Agrociel</span>
+    <h2>Não sabe qual serviço escolher? A central orienta o melhor caminho.</h2>
+    <div class="hero-actions">
+      <a class="btn btn-yellow" href="https://wa.me/5591993099267?text={{ ('Olá! Não sei qual serviço escolher e gostaria de orientação da Agrociel.')|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Pedir orientação</a>
+      <button class="btn btn-ghost" type="button" data-agendar="">{{ ic('cal') }} Agendar</button>
+    </div>
+  </div>
+</section>
+{% endblock %}

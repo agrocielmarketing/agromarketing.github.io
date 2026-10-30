@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% from "base.html" import ic, waic with context %}
+{% set agro = s.frente == 'agro' %}
+{% set longest = s.name.split()|map('length')|max %}
+{% block title %}{{ s.title }}{% endblock %}
+{% block description %}{{ s.description }}{% endblock %}
+{% block ogimage %}{{ abs_url(s.image) }}{% endblock %}
+{% block schema %}
+{"@context":"https://schema.org","@graph":[
+{"@type":"Service","@id":"{{ abs_url(s.url) }}#servico","name":{{ s.name|tojson }},"serviceType":{{ s.name|tojson }},"description":{{ s.lead|tojson }},"url":"{{ abs_url(s.url) }}","image":"{{ abs_url(s.image) }}",
+"provider":{"@type":"Organization","@id":"{{ abs_url() }}#organizacao","name":"Agrociel Soluções Integradas","url":"{{ abs_url() }}"},
+"areaServed":{% if agro %}[{"@type":"State","name":"Pará"}{% for c in cidades %},{"@type":"City","name":{{ (c ~ ', PA')|tojson }}}{% endfor %}]{% else %}{"@type":"Country","name":"Brasil"}{% endif %},
+"audience":{"@type":"Audience","audienceType":{{ s.audience|tojson }}}},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"{{ abs_url() }}"},{"@type":"ListItem","position":2,"name":"{{ 'Agronegócio' if agro else 'Para você' }}","item":"{{ abs_url('agronegocio/' if agro else 'para-voce/') }}"},{"@type":"ListItem","position":3,"name":{{ s.name|tojson }},"item":"{{ abs_url(s.url) }}"}]},
+{"@type":"FAQPage","mainEntity":[{% for f in s.faq %}{"@type":"Question","name":{{ f.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a|tojson }}}}{{ "," if not loop.last }}{% endfor %}]}
+]}
+{% endblock %}
+{% block main %}
+<section class="page-hero draw">
+  {{ topo|safe }}
+  <div class="page-hero-copy">
+    <ol class="crumbs"><li><a href="{{ u() }}">Início</a></li><li><a href="{{ u('agronegocio/' if agro else 'para-voce/') }}">{{ 'Agronegócio' if agro else 'Para você' }}</a></li><li aria-current="page">{{ s.name }}</li></ol>
+    <span class="kicker" style="color:var(--yellow);margin-top:18px">{{ s.grupo }}</span>
+     <h1 style="--lw:{{ longest }}">{{ s.name }}</h1>
+    <p class="page-hero-lead">{{ s.lead }}</p>
+    <div class="hero-chips">
+      <span>{{ ic('pin' if agro else 'globe') }}{{ s.cobertura }}</span>
+      <span>{{ ic('clock') }}Primeira orientação pelo WhatsApp</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-yellow" href="https://wa.me/5591993099267?text={{ s.wa_text|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Quero informações</a>
+      <button class="btn btn-ghost" type="button" data-agendar="{{ s.name }}">{{ ic('cal') }} Agendar atendimento</button>
+    </div>
+  </div>
+  <div class="page-hero-img"><img src="{{ a(s.image) }}" alt="Atendimento da Agrociel em {{ s.name }}" width="{{ s.img_w }}" height="{{ s.img_h }}" fetchpriority="high"></div>
+</section>
+
+<section class="sec">
+  <div class="wrap svc">
+    <div class="svc-main">
+      <nav class="toc" aria-label="Nesta página"><a href="#para-quem">Para quem é</a><a href="#o-que-fazemos">O que fazemos</a><a href="#como-funciona">Como funciona</a><a href="#onde">Onde atendemos</a><a href="#duvidas">Dúvidas</a></nav>
+
+      <section id="para-quem" data-rv>
+        <span class="kicker">Para quem é indicado</span>
+        <p class="audience" style="margin-top:14px">{{ s.audience }}</p>
+      </section>
+
+      <section id="o-que-fazemos" data-rv>
+        <div class="panel-info">
+          <span class="kicker">Atendimento Agrociel</span>
+          <h2>{{ s.panel_title }}</h2>
+          <p>{{ s.panel_text }}</p>
+          <div class="two">
+            <div><h3>Benefícios possíveis</h3><ul class="checks">{% for b in s.benefits %}<li>{{ ic('check') }}<span>{{ b }}</span></li>{% endfor %}</ul></div>
+            <div><h3>Documentos normalmente solicitados</h3>{% if s.docs_note %}<p class="small">{{ s.docs_note }}</p>{% endif %}<ol class="docs">{% for dd in s.docs %}<li>{{ dd }}</li>{% endfor %}</ol></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-funciona" data-rv>
+        <span class="kicker">Como funciona</span>
+        <h2>Um caminho organizado para o seu atendimento</h2>
+        <ol class="steps" style="list-style:none;margin:28px 0 0;padding:0">
+          {% for st in s.steps %}<li class="step"><span class="step-n">{{ loop.index }}</span><h3>{{ st.t }}</h3><p>{{ st.p }}</p></li>{% endfor %}
+        </ol>
+      </section>
+
+      <section id="onde" data-rv>
+        <span class="kicker">Onde atendemos</span>
+        {% if agro %}
+        <h2>{{ s.name }} em todo o Pará</h2>
+        <p style="color:var(--mute)">Atendemos todo o estado do Pará, com atuação próxima nas cidades abaixo. Para outros estados, a central analisa cada caso.</p>
+        <ul class="cities" style="padding:0;margin-top:16px">{% for c in cidades %}<li>{{ c }}</li>{% endfor %}</ul>
+        {% else %}
+        <h2>{{ s.name }} em todo o Brasil</h2>
+        <p style="color:var(--mute)">O atendimento é digital, pelo WhatsApp, para clientes de todo o país. Se preferir, você também pode ser atendido na nossa matriz em Aurora do Pará.</p>
+        {% endif %}
+      </section>
+
+      <section id="duvidas" data-rv>
+        <span class="kicker">Dúvidas frequentes</span>
+        <h2>Antes de começar</h2>
+        <div class="faq-list">{% for f in s.faq %}<details><summary>{{ f.q }}{{ ic('plus') }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+        {% if s.notice %}<div class="notice">{{ ic('info') }}<div><b>{{ s.notice_title or 'Informação importante' }}</b><p>{{ s.notice }}</p></div></div>{% endif %}
+        {% if not agro and s.frente == 'financeiro' %}<div class="notice">{{ ic('shield') }}<div><b>Segurança</b><p>Nas soluções financeiras, a Agrociel atua em parceria com empresas do mercado financeiro, prestando serviços de orientação, organização de documentos e acompanhamento da sua proposta. A Agrociel não é banco: toda operação é analisada e aprovada pela instituição financeira. Não cobramos nenhum valor antecipado para liberar crédito.</p></div></div>{% endif %}
+      </section>
+    </div>
+
+    <aside class="aside">
+      <div class="aside-card">
+        {{ topo|safe }}
+        <p class="status" data-status><i></i><span>Central online agora</span></p>
+        <h2>Fale sobre {{ s.name }}</h2>
+        <p>A mensagem já vai identificada com este serviço. A central responde e informa os próximos passos.</p>
+        <a class="btn btn-wa" href="https://wa.me/5591993099267?text={{ s.wa_text|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Conversar no WhatsApp</a>
+        <button class="btn btn-ghost" type="button" data-agendar="{{ s.name }}">{{ ic('cal') }} Agendar atendimento</button>
+        <div class="aside-meta">
+          <p>{{ ic('pin' if agro else 'globe') }}<span>{{ s.cobertura }}</span></p>
+          <p>{{ ic('clock') }}<span>Segunda a sábado, das 8h às 18h</span></p>
+          <p>{{ ic('phone') }}<a href="tel:+5591993099267" style="color:#fff">(91) 99309-9267</a></p>
+        </div>
+      </div>
+      <div class="aside-links">
+        <h3>Outros serviços em {{ 'Agronegócio' if agro else frentes[s.frente].nome }}</h3>
+        {% for x in s.mesma_frente[:6] %}<a href="{{ u(x.url) }}">{{ x.name }} {{ ic('arrow') }}</a>{% endfor %}
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec related" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" data-rv><span class="kicker">Também pode interessar</span><h2>Serviços relacionados</h2></div>
+    <div class="cards">
+      {% for x in s.relacionados %}
+      <a class="card{{ ' agro' if x.frente == 'agro' else '' }}" href="{{ u(x.url) }}" data-rv>
+        <div class="card-img"><img src="{{ a(x.image) }}" alt="{{ x.name }}" width="{{ x.img_w }}" height="{{ x.img_h }}" loading="lazy"></div>
+        <div class="card-body"><span class="card-tag">{{ x.grupo }}</span><h3>{{ x.name }}</h3><p>{{ x.card_text }}</p><span class="card-more">Ver o serviço {{ ic('arrow') }}</span></div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec band draw">
+  {{ topo|safe }}
+  <div class="wrap">
+    <span class="kicker" style="color:var(--yellow)">Fale com a Agrociel</span>
+    <h2 style="--lw:{{ [longest, 9]|max }}">Quer entender se {{ s.name }} faz sentido para você?</h2>
+    <div class="hero-actions">
+      <a class="btn btn-yellow" href="https://wa.me/5591993099267?text={{ s.wa_text|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Iniciar conversa</a>
+      <button class="btn btn-ghost" type="button" data-agendar="{{ s.name }}">{{ ic('cal') }} Agendar</button>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% from "base.html" import ic, waic with context %}
+{% block title %}Agrociel | Agronegócio no Pará, assessoria e crédito{% endblock %}
+{% block description %}Georreferenciamento, regularização e crédito rural em todo o Pará; aposentadoria rural, consignado e crédito em todo o Brasil. Matriz em Aurora do Pará.{% endblock %}
+{% block head %}
+<link rel="preload" as="image" href="{{ a('assets/hero-equipe-agrociel.webp') }}" fetchpriority="high">
+<script>
+/* endereços antigos (#/servicos/...) levam para as páginas novas */
+(function(){var h=location.hash;if(h.indexOf('#/')!==0)return;var p=h.slice(2).split('#')[0].replace(/\/$/,'');var m={'para-voce':'para-voce/','agronegocio':'agronegocio/','politica-de-privacidade':'politica-de-privacidade.html','termos-de-servico':'termos-de-servico.html'};var dest=m[p]||(p.indexOf('servicos/')===0?p+'/':'');if(dest!==undefined){if(dest.slice(-1)==='/'&&{{ previa|tojson }})dest+='index.html';location.replace(dest||'./');}})();
+</script>
+{% endblock %}
+{% block schema %}
+{"@context":"https://schema.org","@graph":[
+{"@type":["Organization","ProfessionalService"],"@id":"{{ abs_url() }}#organizacao","name":"Agrociel Soluções Integradas","url":"{{ abs_url() }}","logo":"{{ abs_url('assets/brand/agrociel-logo-color.png') }}","image":"{{ abs_url('assets/hero-equipe-agrociel.webp') }}","taxID":"60.317.151/0001-08","email":"agrociel.adm@gmail.com","telephone":"+55 91 99309-9267",
+"address":{"@type":"PostalAddress","streetAddress":"Avenida Bernardo Sayão, 885, Centro","addressLocality":"Aurora do Pará","addressRegion":"PA","postalCode":"68658-000","addressCountry":"BR"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}],
+"areaServed":[{"@type":"State","name":"Pará"},{"@type":"Country","name":"Brasil"}],
+"sameAs":["https://www.instagram.com/agrociel/","https://www.facebook.com/people/Agrociel/61579068849383/","https://www.linkedin.com/company/agrociel/"]},
+{"@type":"WebSite","@id":"{{ abs_url() }}#site","name":"Agrociel Soluções Integradas","alternateName":"Agrociel","url":"{{ abs_url() }}","inLanguage":"pt-BR","publisher":{"@id":"{{ abs_url() }}#organizacao"}}
+]}
+{% endblock %}
+{% block main %}
+<section class="hero draw">
+  {{ topo|safe }}
+  <div class="hero-photo"><img src="{{ a('assets/hero-equipe-agrociel.webp') }}" alt="Consultores da Agrociel atendendo produtores rurais em reunião com mapa da propriedade" width="1672" height="941" fetchpriority="high"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker fade-in" style="color:var(--yellow)">Agrociel Soluções Integradas</span>
+      <h1><span class="rise"><span>Para quem produz, planeja e quer ir mais longe.</span></span></h1>
+      <p class="hero-lead fade-in">Regularização da terra, assessoria previdenciária e crédito com atendimento humano. Matriz em Aurora do Pará, atendimento em todo o estado e soluções em todo o Brasil.</p>
+      <form class="finder fade-in" data-finder role="search" autocomplete="off">
+        <label for="busca">Qual serviço você procura?</label>
+        <div class="finder-box">
+          {{ ic('search') }}
+          <input id="busca" type="search" placeholder="Ex.: georreferenciamento, aposentadoria, consignado" role="combobox" aria-expanded="false" aria-controls="busca-lista" aria-autocomplete="list">
+          <button type="submit">Buscar</button>
+        </div>
+        <ul class="finder-list" id="busca-lista" role="listbox" hidden></ul>
+        <div class="finder-tags"><a href="{{ u('servicos/georreferenciamento-rural/') }}">Georreferenciamento</a><a href="{{ u('servicos/regularizacao-rural/') }}">Regularização rural</a><a href="{{ u('servicos/aposentadoria-rural/') }}">Aposentadoria rural</a><a href="{{ u('servicos/emprestimo-consignado-inss/') }}">Consignado INSS</a></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Atendimento Agrociel">
+  <div class="wrap facts-grid">
+    <div class="fact"><span class="fact-ic">{{ ic('home') }}</span><div><b>Matriz em Aurora do Pará</b><span>Atendimento presencial de segunda a sábado, das 8h às 18h.</span></div></div>
+    <div class="fact"><span class="fact-ic">{{ ic('sprout') }}</span><div><b>Agronegócio em todo o Pará</b><span>Atuação próxima em {{ cidades[:-1]|join(', ') }} e {{ cidades[-1] }}.</span></div></div>
+    <div class="fact"><span class="fact-ic">{{ ic('globe') }}</span><div><b>Assessoria e crédito no Brasil</b><span>Atendimento digital pelo WhatsApp, do primeiro contato ao próximo passo.</span></div></div>
+  </div>
+</section>
+
+<section class="sec" id="solucoes">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <span class="kicker">Nossas soluções</span>
+      <h2>Três frentes que trabalham juntas</h2>
+      <p>O mesmo cliente pode regularizar o imóvel, acessar crédito e resolver um benefício num só lugar. Escolha a área e veja cada serviço.</p>
+    </div>
+    <div class="fronts" data-rv>
+      <div class="tabs" role="tablist" aria-label="Áreas de atendimento">
+        {% for k, f in frentes.items() %}
+        <button class="tab" role="tab" id="tab-{{ k }}" aria-controls="painel-{{ k }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ 0 if loop.first else -1 }}"><b>{{ f.nome }}</b><small>{{ frentes_svcs[k]|length }} serviços</small></button>
+        {% endfor %}
+      </div>
+      {% for k, f in frentes.items() %}
+      <div class="panel" role="tabpanel" id="painel-{{ k }}" aria-labelledby="tab-{{ k }}"{% if not loop.first %} hidden{% endif %}>
+        <div class="panel-img"><img src="{{ a(f.img) }}" alt="" width="1200" height="800" loading="lazy"><span>{{ f.cobertura }}</span></div>
+        <div class="panel-body">
+          <h3>{{ f.titulo }}</h3>
+          <p>{{ f.texto }}</p>
+          <ul class="svc-list">{% for x in frentes_svcs[k] %}<li><a href="{{ u(x.url) }}">{{ ic('arrow') }}{{ x.name }}</a></li>{% endfor %}</ul>
+          <a class="btn btn-navy" href="{{ u(f.url) }}">Ver todos os serviços {{ ic('arrow') }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec on-dark" id="como-funciona">
+  {{ topo|safe }}
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="sec-head" data-rv>
+      <span class="kicker">Como funciona</span>
+      <h2>Do primeiro contato ao próximo passo</h2>
+      <p>Um caminho simples, com orientação em cada etapa e clareza sobre o que depende de órgãos e instituições.</p>
+    </div>
+    <ol class="steps" style="list-style:none;margin:0;padding:0">
+      <li class="step" data-rv><span class="step-n">1</span><h3>Contato</h3><p>Você chama a central pelo WhatsApp ou agenda pelo site e conta o que precisa.</p></li>
+      <li class="step" data-rv><span class="step-n">2</span><h3>Triagem</h3><p>A equipe entende o caso e informa os documentos e as condições iniciais.</p></li>
+      <li class="step" data-rv><span class="step-n">3</span><h3>Análise</h3><p>Documentos, viabilidade e prazos são avaliados conforme o serviço escolhido.</p></li>
+      <li class="step" data-rv><span class="step-n">4</span><h3>Acompanhamento</h3><p>Você recebe a orientação e o acompanhamento até o próximo passo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="onde-atendemos">
+  <div class="wrap where">
+    <div data-rv>
+      <span class="kicker">Onde atendemos</span>
+      <h2>Raízes no Pará, atendimento em todo o Brasil</h2>
+      <p class="where-lead">Nossa matriz fica em Aurora do Pará. No agronegócio, atendemos todo o estado; na assessoria previdenciária e nas soluções financeiras, o atendimento digital chega a todo o país.</p>
+      <div class="coverage">
+        <div class="cov">{{ ic('sprout') }}<div><b>Agronegócio: todo o estado do Pará</b><span>Atuação próxima em:</span>
+          <ul class="cities" style="padding:0;margin-bottom:0">{% for c in cidades %}<li>{{ c }}</li>{% endfor %}</ul>
+          <span style="display:block;margin-top:8px">Alguns serviços podem ser atendidos em outros estados, após análise do caso.</span></div></div>
+        <div class="cov br">{{ ic('globe') }}<div><b>Assessoria e soluções financeiras: todo o Brasil</b><span>Atendimento digital pelo WhatsApp, com orientação do início ao fim.</span></div></div>
+      </div>
+      <div class="addr">
+        <p>{{ ic('pin') }}<span>Avenida Bernardo Sayão, 885, Centro, Aurora do Pará — PA</span></p>
+        <p>{{ ic('clock') }}<span>Segunda a sábado, das 8h às 18h</span></p>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/5591993099267?text={{ ('Olá! Quero saber se a Agrociel atende na minha cidade.')|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Consultar minha cidade</a>
+    </div>
+    <div class="map" data-rv>
+      <img src="{{ a('assets/mapa-brasil-para.webp') }}" alt="Mapa do Brasil com o estado do Pará em destaque" width="483" height="479" loading="lazy">
+      <div class="map-card">{{ ic('globe') }}<div><b>Atendimento digital</b><span>Assessoria e crédito em todo o Brasil</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-dark" id="sobre">
+  {{ topo|safe }}
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="sec-head" data-rv>
+      <span class="kicker">Sobre nós</span>
+      <h2>Por que a Agrociel é diferente</h2>
+      <p>Há um ano com estrutura física em Aurora do Pará, unimos conhecimento técnico, organização administrativa e atendimento financeiro para você encontrar caminhos claros em um só lugar.</p>
+    </div>
+    <div class="why-photo" data-rv><img src="{{ a('assets/servicos/georreferenciamento-rural.webp') }}" alt="Consultores da Agrociel com produtor rural em levantamento de georreferenciamento" width="1200" height="900" loading="lazy"></div>
+    <div class="why-grid">
+      <div class="why" data-rv><span class="why-ic">{{ ic('heart') }}</span><h3>Atendimento humano</h3><p>Escuta próxima, orientação simples e respeito à realidade de cada cliente.</p></div>
+      <div class="why" data-rv><span class="why-ic">{{ ic('layers') }}</span><h3>Soluções integradas</h3><p>Áreas que conversam para organizar seu atendimento do início ao próximo passo.</p></div>
+      <div class="why" data-rv><span class="why-ic">{{ ic('shield') }}</span><h3>Atuação responsável</h3><p>Processos conduzidos com transparência, critérios claros e respeito às regras aplicáveis.</p></div>
+      <div class="why" data-rv><span class="why-ic">{{ ic('search') }}</span><h3>Análise personalizada</h3><p>Cada caso é avaliado de acordo com os documentos e a modalidade escolhida.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap trust">
+    <div data-rv>
+      <span class="kicker">Segurança e transparência</span>
+      <h2>Atendimento claro, do jeito certo</h2>
+      <p>Nas soluções financeiras, a Agrociel atua em parceria com empresas do mercado financeiro, prestando serviços de orientação, organização de documentos e acompanhamento da sua proposta. A Agrociel não é banco: toda operação é analisada e aprovada pela instituição financeira.</p>
+    </div>
+    <div class="guard" data-rv>
+      <p>{{ ic('check') }}<span>A Agrociel não é banco. Toda operação de crédito é analisada e aprovada pela instituição financeira.</span></p>
+      <p>{{ ic('check') }}<span>Não cobramos nenhum valor antecipado para liberar crédito. Desconfie de quem pedir.</span></p>
+      <p>{{ ic('check') }}<span>Empresa com CNPJ ativo (60.317.151/0001-08) e matriz física em Aurora do Pará.</span></p>
+      <p>{{ ic('check') }}<span>No primeiro contato, não pedimos senhas nem dados bancários.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap faq">
+    <div class="sec-head" data-rv style="margin-bottom:0">
+      <span class="kicker">Dúvidas frequentes</span>
+      <h2>Antes de falar com a gente</h2>
+      <p>As perguntas que mais recebemos na central. Não achou a sua? Fale com a gente pelo WhatsApp.</p>
+    </div>
+    <div class="faq-list" data-rv>
+      {% for q, a_ in [
+        ("A Agrociel é um banco?", "Não. Nas soluções financeiras, a Agrociel atua em parceria com empresas do mercado financeiro, prestando serviços de orientação, organização de documentos e acompanhamento da sua proposta. Toda operação é analisada e aprovada pela instituição financeira."),
+        ("Vocês cobram algum valor para liberar crédito?", "Não. A Agrociel não cobra nenhum valor antecipado para liberar crédito. Se alguém pedir pagamento antecipado em nome da Agrociel, não pague e fale com a nossa central."),
+        ("Vocês atendem na minha cidade?", "No agronegócio, atendemos todo o estado do Pará, com atuação próxima em Aurora do Pará, Mãe do Rio, Capitão Poço, Ipixuna do Pará e Paragominas. Alguns serviços podem ser atendidos em outros estados, após análise. Assessoria previdenciária e soluções financeiras são atendidas em todo o Brasil."),
+        ("Preciso ir até o escritório?", "Na maioria dos casos, não. O atendimento começa pelo WhatsApp e muitos serviços são feitos à distância. Para quem prefere atendimento presencial, a matriz fica em Aurora do Pará, de segunda a sábado, das 8h às 18h."),
+        ("Quais documentos preciso separar?", "Depende do serviço. Cada página de serviço traz os documentos normalmente pedidos, e a lista exata do seu caso é confirmada pela central no primeiro atendimento."),
+      ] %}
+      <details><summary>{{ q }}{{ ic('plus') }}</summary><p>{{ a_ }}</p></details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta" data-rv>
+      <div class="cta-copy">
+        <span class="kicker">Seu próximo passo começa aqui</span>
+        <h2>Seja cliente da Agrociel.</h2>
+        <p>Conte o que você precisa e receba uma primeira orientação para encontrar a solução mais adequada.</p>
+        <div class="cta-actions">
+          <a class="btn btn-yellow" href="https://wa.me/5591993099267?text={{ ('Olá! Quero ser atendido pela Agrociel e conhecer a solução mais adequada para mim.')|urlencode }}" target="_blank" rel="noopener">{{ waic() }} Quero ser atendido</a>
+          <button class="btn btn-ghost" type="button" data-agendar="">{{ ic('cal') }} Agendar</button>
+        </div>
+      </div>
+      <div class="cta-photo"><img src="{{ a('assets/servicos/aposentadoria-rural.webp') }}" alt="Consultor da Agrociel apresentando documentos a um casal de clientes" width="1200" height="800" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
