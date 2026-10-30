@@ -176,6 +176,8 @@
     <h2 id="agendar-t">Agende seu atendimento</h2>
     <p>Preencha os dados e envie pelo WhatsApp. A central confirma o melhor dia e informa os documentos do seu caso.</p>
     <form novalidate>
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label for="f-site">Não preencha</label><input id="f-site" name="site" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="t" value="">
       <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" autocomplete="name" required><span class="err">Informe seu nome.</span></div>
       <div class="row2">
         <div class="field"><label for="f-tel">WhatsApp</label><input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(91) 90000-0000" required><span class="err">Informe um telefone com DDD.</span></div>

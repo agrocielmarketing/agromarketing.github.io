@@ -6,6 +6,24 @@
   if (!reduce) root.classList.add('js');
   var CFG = window.AGROCIEL || {};
   var WA_NUMBER = '5591993099267';
+  var CRM_URL = 'https://cielchat.onrender.com/api/site/lead';
+
+  /* guarda de onde o visitante veio (anúncio, campanha) para mandar junto com o agendamento */
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  try {
+    var qs = new URLSearchParams(location.search), got = {};
+    UTM_KEYS.forEach(function (k) { if (qs.get(k)) got[k] = qs.get(k).slice(0, 200); });
+    if (Object.keys(got).length) sessionStorage.setItem('agUtm', JSON.stringify(got));
+  } catch (_) {}
+  function utm() { try { return JSON.parse(sessionStorage.getItem('agUtm') || '{}'); } catch (_) { return {}; } }
+
+  /* envia o agendamento para a CielChat (Kanban, origem "site"); não segura o WhatsApp se a central estiver fora */
+  function sendToCrm(data) {
+    try {
+      var body = JSON.stringify(Object.assign({ pagina: location.href.split('#')[0] }, utm(), data));
+      if (window.fetch) fetch(CRM_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body, keepalive: true, mode: 'cors', credentials: 'omit' }).catch(function () {});
+    } catch (_) {}
+  }
   function wa(text) { return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text); }
   function $(s, c) { return (c || d).querySelector(s); }
   function $$(s, c) { return Array.prototype.slice.call((c || d).querySelectorAll(s)); }
@@ -134,7 +152,7 @@
   var modal = $('#agendar'), form = modal && $('form', modal), lastFocus;
   function modalSet(v, service) {
     if (!modal) return;
-    if (v) { lastFocus = d.activeElement; if (service) { var s = form.servico; for (var i = 0; i < s.options.length; i++) if (s.options[i].value === service) s.selectedIndex = i; } }
+    if (v) { form.t.value = String(Date.now()); lastFocus = d.activeElement; if (service) { var s = form.servico; for (var i = 0; i < s.options.length; i++) if (s.options[i].value === service) s.selectedIndex = i; } }
     if (v) modal.classList.add('is-open'); else if (modal.classList.contains('is-open')) closeAnim(modal, 180); d.body.style.overflow = v ? 'hidden' : '';
     if (v) setTimeout(function () { form.nome.focus(); }, 50); else if (lastFocus) lastFocus.focus();
   }
@@ -158,6 +176,7 @@
         'Nome: ' + form.nome.value.trim() + '\nWhatsApp: ' + form.telefone.value + '\nCidade: ' + form.cidade.value.trim() +
         '\nServiço: ' + form.servico.value + (form.melhor.value ? '\nMelhor horário: ' + form.melhor.value : '');
       window.open(wa(msg), '_blank', 'noopener');
+      sendToCrm({ nome: form.nome.value.trim(), telefone: form.telefone.value, cidade: form.cidade.value.trim(), servico: form.servico.value, melhor: form.melhor.value, site: form.site.value, t: form.t.value });
       modalSet(false); form.reset();
     });
   }
